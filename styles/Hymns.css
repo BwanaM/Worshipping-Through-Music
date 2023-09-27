@@ -1,0 +1,164 @@
+.Different-Hymns> .Hymns-Wrapper{
+
+}
+
+.Header1{
+    background-color:red;
+    color: black;
+    width: 180px;
+    padding: 1px 20px;
+    height: 100%;
+    border-radius: 5px;
+    margin-bottom: -2px;
+    margin-left: 40px;
+}
+
+.Header2{
+    background-color:#cea135;
+    color: #1122bb;
+    width: 170px;
+    padding: 1px 20px;
+    height: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: -3px;
+    margin-left: 550px;
+}
+
+.Header3{
+    background-color:#cbcbcb;
+    color: #11122b;
+    width: 170px;
+    padding: 1px 20px;
+    height: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: -3px;
+    margin-left: 1089.5px;
+    margin-right: -2pxpx;
+}
+
+.youtube-access1{
+    width:600px;
+    height: 315px;
+    margin-left: 40px;
+}
+
+.youtube-access2{
+    width:600px;
+    height: 315px;
+    margin-left: 350px;
+}
+
+.youtube-access3{
+    width:600px;
+    height: 315px;
+    margin-left: 700px;
+}
+
+.hymn{
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(213, 218, 219, 0.253), rgba(0,8,51,0.9)), url(/Pictures/parallax/pexels-krivec-ales-547119.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 0px;
+}
+
+.hymn{
+    letter-spacing: 1.2px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2; 
+    color: #cbcbcb;  
+}
+
+h1 {
+    color: black;
+}
+h2 {
+    color: #11122b;
+}
+
+
+.Direction-Changing-Wrapper> a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  .Direction-Changing-Wrapper> a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+  .Hymns-Home{
+    color:#cea135 ;
+  }
+
+  .chorus{
+    font-style: oblique;
+    font-weight: bold;
+    color: aqua;
+  }
+
+
+/* media Queries */
+@media (max-width:912px){
+  .hymn{
+    width: 100%;
+  }
+  .Header1{
+    width: 40%;
+    margin-left: 0%;
+  }
+  .youtube-access1{
+    width: 100%;
+    margin: 0%;
+  
+  }
+
+  .Header2{
+    width: 40%;
+    margin-left: 0%;
+  }
+  .youtube-access2{
+    width: 100%;
+    margin: 0%;
+  }
+
+  .Header3{
+    width: 40%;
+    margin-left: 0%;
+  }
+  .youtube-access3{
+    width: 100%;
+    margin: 0%;
+  }
+}
+
+  @media (width:1024px){
+    .Header3{
+      width: 40%;
+      margin-left: 0%;
+    }
+    .youtube-access3{
+      width: 600px;
+      margin: 0%;
+    }
+  
+}
+

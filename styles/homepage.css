@@ -1,0 +1,292 @@
+.paralax {
+    background-image: url(../Pictures/parallax/pexels-chavdar-lungov-3996362.jpg);
+    padding: 100px;
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    justify-items: center;
+}
+
+.paralax> .paralax-one{
+    margin-right: 300px;
+}
+
+.paralax> .paralax-one> .Heading-1 {
+    background-color: #11122b;
+    color: #cbcbcb;
+    width: 230px;
+    border-radius: 2px;
+    padding: 1px 20px;
+}
+
+.paralax> .paralax-one> .Heading-2 {
+    background-color: #cea135;
+    color: #11122b;
+    padding: 1px 20px;
+    margin-top: 15px;
+    width: 220px;
+    border-radius: 2px;}
+
+.paralax> .paralax-one> .Heading-3 {
+    background-color: red;
+    color: black;
+    padding: 1px 20px;
+    margin-top: 15px;
+    width: 230px;
+    border-radius: 2px;
+}
+
+.paralax> .paralax-one> .Heading-4 {
+    background-color: black;
+    color: #cbcbcb;
+    padding: 1px 20px;
+    margin-top: 15px;
+    width: 200px;
+    border-radius: 2px;}
+
+.paralax> .paralax-one>.Heading-5 {
+    background-color: #11122b;
+    color: red;
+    padding: 1px 20px;
+    margin-top: 15px;
+    width: 160px;
+    border-radius: 2px;}
+
+
+/* Bunner */
+
+.paralax> .paralax-two> .Bunner{
+    width: auto;
+    height: auto;
+  }
+  
+  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content{
+    color: #0e0d0d;
+    width: auto; 
+  }
+  
+  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content span{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: 2px solid brown;
+    border-radius: 5px;
+    padding: 20px 30px;
+    color: #fff;
+    background-color: red;
+  }
+  
+  .Bunner> .Container> .Bunner-Content h1{
+    margin-bottom: 10px;
+    font-size: 250%;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+  }
+  
+  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content p{
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 350%;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    color:#cbcbcb;
+    padding: 15%;
+    text-transform: uppercase;
+    
+   }
+  
+  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content a{
+    text-decoration: none;
+  }
+  
+  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content> .btn-one{
+    padding: 10px 30px;
+    background-color: #cea134;
+    color: black;
+    border: 2px solid #0e0d0d;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+  
+  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content> .btn-two{
+    padding: 10px 30px;
+    background-color:rgb(0, 128, 43);
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: capitalize;
+    margin-left: 20px;
+  }
+  
+  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content> .btn-one:hover{
+    color: red;
+    border: 2px solid red;
+  }
+  
+  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content> .btn-two:hover{
+    color: #ffff;
+    border: 2px solid purple;
+  }
+  
+  .Bunner> .Container> .Bunner-Content span:hover{
+    letter-spacing: 2px;
+  }
+
+.Features-structures {
+    height: 400px;
+    background-image: url(../Pictures/Backgrounds/20230418_155634.jpg);
+    background-color: #cea135;
+    border-top: 10px solid white;
+    color: #11122b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ubuntu condensed', sans-serif;
+    box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
+}
+
+.Features-structures {
+    box-shadow: inset 0px -26px 79px -8px rgba(red, green, blue, alpha);
+}
+    
+.Features-structures> .Column-wraper{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Features-structures> .Column-wraper> .column{
+    padding: 20px;
+    margin: 42px;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+    transition: 1s;
+}
+
+.Features-structures> .Column-wraper> .column:hover{
+    border-bottom: 5px solid #cea135;
+}
+
+.Features-structures> .Column-wraper> .column :nth-child(1) {
+    font-size: 3em;
+}
+
+.Features-structures> .Column-wraper> .column :nth-child(2) {
+    width: 255px;
+    transition: 0.5s;
+    color: #11122b;
+}
+
+.Features-structures> .Column-wraper> .column :nth-child(2):hover {
+    letter-spacing: 1px;
+    color: #cea135;
+}
+
+.Features-structures> .Column-wraper> .column :nth-child(3) {
+    letter-spacing: 2px;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+  @media (max-width:912px) {
+    .paralax{
+        padding: auto;
+        flex-direction: column;
+    
+    }
+    .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content p{
+        font-size: 130%;
+        padding: 5%;
+    }
+
+    .paralax> .paralax-two{
+        margin-top: 60px;  
+    }
+
+    .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content span{
+        font-size: 90%;
+    }
+
+    .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content> .btn-one{
+        float: left;
+    }
+
+    .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content> .btn-two{
+       float: right;
+       margin-top: 3px;
+    }
+
+    .Features-structures{
+        height: 100%;
+    }
+
+    .Features-structures> .Column-wraper{
+        width: 100%;
+        flex-direction: column;
+    }
+    .Features-structures> .Column-wraper> .column :nth-child(2){
+        margin-left: 2rem;
+    }
+    .paralax{
+        height: 100%;
+    }
+    .Features-structures{
+        width: 100%;
+    }
+  }
+
+  @media (width:280px){
+    .paralax> .paralax-one{
+        padding: auto;
+    }
+  
+    .paralax> .paralax-one> .Heading-1{
+        width: fit-content;
+        font-size: x-small;
+    }
+
+    .paralax> .paralax-one> .Heading-2{
+        width: fit-content;
+    }
+
+    .paralax> .paralax-one> .Heading-3{
+        width: fit-content;
+        font-size: x-small;
+    }
+
+    .paralax> .paralax-one> .Heading-4{
+        width: fit-content;
+    }
+
+    .paralax> .paralax-one> .Heading-5{
+        width: fit-content;
+    }
+    
+    .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content span{
+        font-size: 1px;
+        letter-spacing: 1px;}
+
+    .Bunner> .Container> .Bunner-Content h1{
+        font-size: 150%;
+    }
+    .Bunner> .Container> .Bunner-Content p{
+        font-size: larger;
+        
+    }
+  }

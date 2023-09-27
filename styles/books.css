@@ -1,0 +1,57 @@
+.Hymns-wrapper{
+    height: 2620px;
+    background-color: #11122b;
+    color: #cbcbcb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.heading{
+   background-color: red;
+   width: 310px;
+   color: black; 
+   border-radius: 6px;
+   border: 2px solid #11122b;
+}
+
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hymn a{
+  transform: o.5s;
+}
+.hymn a:hover{
+ color: #cea135;
+}
+
+.Top-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2%;
+}
+
+.Top-wrapper> .download-link h2 a{
+  color: aqua;
+}
+
+/* media Queries */
+@media (max-width:912px){
+  .Hymns-wrapper{
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .heading{
+    width: 100%;
+    border-radius: 2%;
+  }
+  .Top-wrapper{
+    flex-direction: column-reverse;
+  }
+}
