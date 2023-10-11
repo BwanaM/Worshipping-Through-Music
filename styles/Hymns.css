@@ -59,7 +59,7 @@
 .hymn{
     min-height: 100vh;
     padding: 5%;
-    background-image: linear-gradient(rgba(213, 218, 219, 0.253), rgba(0,8,51,0.9)), url(/Pictures/parallax/pexels-krivec-ales-547119.jpg);
+    background-image: linear-gradient(rgba(213, 218, 219, 0.253), rgba(26, 26, 27, 0.9)), url(../Pictures/parallax/pexels-krivec-ales-547119.jpg);
     background-position: center;
     background-size: cover;
     margin-left: 0px;
@@ -77,7 +77,11 @@ h1 {
     color: black;
 }
 h2 {
-    color: #11122b;
+    color: #04AA6D;
+}
+
+h3{
+  color: #a3a3a3;
 }
 
 
