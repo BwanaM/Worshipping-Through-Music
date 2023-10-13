@@ -59,9 +59,10 @@
 .hymn{
     min-height: 100vh;
     padding: 5%;
-    background-image: linear-gradient(rgba(213, 218, 219, 0.253), rgba(26, 26, 27, 0.9)), url(../Pictures/parallax/pexels-krivec-ales-547119.jpg);
+    background-image: linear-gradient(rgba(20, 22, 22, 0.253), rgba(6, 6, 24, 0.9)), url(../Pictures/parallax/pexels-krivec-ales-547119.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     margin-left: 0px;
 }
 
@@ -74,14 +75,20 @@
 }
 
 h1 {
-    color: black;
+  color: rgba(231, 229, 224, 0.644);
+  font-weight: bolder;
+  box-shadow: 0 15px 20px rgba(22, 22, 22, 0.2);
 }
 h2 {
-    color: #04AA6D;
+    color: #b33259;
+    font-size: 45px;
 }
 
 h3{
-  color: #a3a3a3;
+  color: rgba(231, 229, 224, 0.644);
+  font-size: 25px;
+  background-color: transparent;
+  box-shadow: 0 15px 20px rgba(22, 22, 22, 0.2);
 }
 
 
@@ -92,7 +99,7 @@ h3{
   }
   
   .Direction-Changing-Wrapper> a:hover {
-    background-color: #ddd;
+    background-color: red;
     color: black;
   }
   
