@@ -203,6 +203,9 @@
     box-sizing: border-box;
   }
   
+  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content span{
+    width: fit-content;
+  }
 
   @media (max-width:912px) {
     .paralax{
@@ -220,7 +223,7 @@
     }
 
     .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content span{
-        font-size: 90%;
+        font-size: 80%;
     }
 
     .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content> .btn-one{
@@ -280,6 +283,7 @@
     
     .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content span{
         font-size: 1px;
+        width: fit-content;
         letter-spacing: 1px;}
 
     .Bunner> .Container> .Bunner-Content h1{

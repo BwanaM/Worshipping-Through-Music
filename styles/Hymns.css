@@ -74,17 +74,21 @@
     color: #cbcbcb;  
 }
 
-h1 {
+.hymn h1 {
   color: rgba(231, 229, 224, 0.644);
   font-weight: bolder;
   box-shadow: 0 15px 20px rgba(22, 22, 22, 0.2);
+  border: 3px solid #cea135;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-width: fit-content;
 }
-h2 {
+.hymn h2 {
     color: #b33259;
     font-size: 45px;
 }
 
-h3{
+.hymn h3{
   color: rgba(231, 229, 224, 0.644);
   font-size: 25px;
   background-color: transparent;
@@ -130,7 +134,7 @@ h3{
 /* media Queries */
 @media (max-width:912px){
   .hymn{
-    width: 100%;
+    width: fit-content;
   }
   .Header1{
     width: 40%;
