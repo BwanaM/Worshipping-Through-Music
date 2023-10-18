@@ -10,7 +10,7 @@
 }
 
 .page-container p{
-  color: #cbccca;
+  color:black;
   font-weight: 700;
   line-height: 2rem;
   font-family: 'ubuntu condensed', sans-serif;
@@ -18,5 +18,5 @@
 
 }
 .page-container p a{
-    color:#cea135;
+    color:brown;
 }
