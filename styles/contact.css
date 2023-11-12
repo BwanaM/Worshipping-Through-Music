@@ -29,6 +29,10 @@
     color: #11122b;
 }
 
+.email-address{
+    text-align: center;
+}
+
 .Page-Container> .Contact-grid-wrapper> .Contact-metadata-sidebar-wrapper> .Company-details-wrapper:hover{
     color: #cea135;
 }

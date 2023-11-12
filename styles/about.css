@@ -1,10 +1,4 @@
-.page-container{
-  min-height: 30vh;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  background-image: linear-gradient(rgba(213, 218, 219, 0.253), rgba(0,8,51,0.9)), url(/Pictures/parallax/pexels-pixabay-302549.jpg);
-  background-position: center;
-  background-size: cover;
+.page-container{ 
   margin-left: 0px;
   color: blue;
 }
@@ -14,9 +8,14 @@
   font-weight: 700;
   line-height: 2rem;
   font-family: 'ubuntu condensed', sans-serif;
-  padding: 3%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 1%;
 
 }
 .page-container p a{
     color:brown;
+}
+.page-container h1,h2{
+  padding-left: 4%;
 }

@@ -61,6 +61,20 @@
     color: #858585;
 }
 
+.footer> .Other{
+    display: flex;
+    justify-content: center;
+    color: #858585;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.footer> .Other a{
+    transition: 0.5s;
+}
+.footer> .Other a:hover{
+    color: #cea135;
+}
+
 .designers-contact a{
     display: flex;
     justify-content: center;
