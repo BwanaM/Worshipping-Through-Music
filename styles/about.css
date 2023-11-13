@@ -18,4 +18,7 @@
 }
 .page-container h1,h2{
   padding-left: 4%;
+  font-family: 'ubuntu condensed', sans-serif;
+  font-size: small;
 }
+

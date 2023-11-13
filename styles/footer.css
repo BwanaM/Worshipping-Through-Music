@@ -12,7 +12,6 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 1px;
-    margin: -8px;
     font-family:'ubuntu condensed', sans-serif ;
 }
 
