@@ -1,19 +1,22 @@
 .Hymns-wrapper{
-    height: 2620px;
+    height: fit-content;
     background-color: #11122b;
     color: #cbcbcb;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+   
 }
 
 .heading{
    background-color: red;
    width: 310px;
    color: black; 
-   border-radius: 6px;
+   border-top-right-radius: 50px;
    border: 2px solid #11122b;
+   
 }
 
 .heading{
@@ -41,11 +44,11 @@
 }
 
 /* media Queries */
-@media (max-width:912px){
+@media (max-width:1023px){
   .Hymns-wrapper{
-    height: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
+    height: fit-content;
+    grid-template-columns: 1fr;
+    padding-left: auto;
   }
   .heading{
     width: 100%;

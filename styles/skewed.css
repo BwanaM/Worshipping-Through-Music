@@ -11,7 +11,7 @@
     left: 0;
     right: 0;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-repeat: no-repeat;
     background-size: 100%;
     transform: skewY(-6deg);
@@ -27,7 +27,7 @@
 }
 
 .Skewed-Header> .Skewed-Header-Wrapper> .Skewed-Header-Content{
-    width: 1000px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +60,7 @@
         background-size: =<912px;
     } 
     .Skewed-Header> .Skewed-Header-Wrapper{
-        width: 100%;
+        width: 100v;
     
     }
     .Skewed-Header> .Skewed-Header-Wrapper> .Skewed-Header-Content{

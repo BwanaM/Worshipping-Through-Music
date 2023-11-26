@@ -17,25 +17,25 @@
 .paralax> .paralax-one> .Heading-1 {
     background-color: #11122b;
     color: #cbcbcb;
-    width: 230px;
+    width: fit-content;
     border-radius: 2px;
     padding: 1px 20px;
 }
 
 .paralax> .paralax-one> .Heading-2 {
-    background-color: #cea135;
+    background-color: red;
     color: #11122b;
     padding: 1px 20px;
     margin-top: 15px;
-    width: 220px;
+    width: fit-content;
     border-radius: 2px;}
 
 .paralax> .paralax-one> .Heading-3 {
-    background-color: red;
+    background-color: #cea135;
     color: black;
     padding: 1px 20px;
     margin-top: 15px;
-    width: 230px;
+    width: fit-content;
     border-radius: 2px;
 }
 
@@ -44,7 +44,7 @@
     color: #cbcbcb;
     padding: 1px 20px;
     margin-top: 15px;
-    width: 200px;
+    width: fit-content;
     border-radius: 2px;}
 
 .paralax> .paralax-one>.Heading-5 {
@@ -52,98 +52,10 @@
     color: red;
     padding: 1px 20px;
     margin-top: 15px;
-    width: 160px;
+    width: fit-content;
     border-radius: 2px;}
 
-
-/* Bunner */
-
-.paralax> .paralax-two> .Bunner{
-    width: auto;
-    height: auto;
-  }
-  
-  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content{
-    color: #0e0d0d;
-    width: auto; 
-  }
-  
-  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content span{
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    border: 2px solid brown;
-    border-radius: 5px;
-    padding: 20px 30px;
-    color: #fff;
-    background-color: red;
-  }
-  
-  .Bunner> .Container> .Bunner-Content h1{
-    margin-bottom: 10px;
-    font-size: 250%;
-    letter-spacing: 3px;
-    font-family: sans-serif;
-    text-transform: capitalize;
-    margin-bottom: 40px;
-  }
-  
-  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content p{
-    margin-bottom: 40px;
-    background-color: rgba(0, 0, 0, 0.3);
-    font-size: 350%;
-    letter-spacing: 3px;
-    font-family: sans-serif;
-    color:#cbcbcb;
-    padding: 15%;
-    text-transform: uppercase;
-    
-   }
-  
-  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content a{
-    text-decoration: none;
-  }
-  
-  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content> .btn-one{
-    padding: 10px 30px;
-    background-color: #cea134;
-    color: black;
-    border: 2px solid #0e0d0d;
-    border-radius: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    font-style: italic;
-    text-transform: capitalize;
-  }
-  
-  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content> .btn-two{
-    padding: 10px 30px;
-    background-color:rgb(0, 128, 43);
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    font-style: italic;
-    text-transform: capitalize;
-    margin-left: 20px;
-  }
-  
-  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content> .btn-one:hover{
-    color: red;
-    border: 2px solid red;
-  }
-  
-  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content> .btn-two:hover{
-    color: #ffff;
-    border: 2px solid purple;
-  }
-  
-  .Bunner> .Container> .Bunner-Content span:hover{
-    letter-spacing: 2px;
-  }
-
+ 
 .Features-structures {
     height: 400px;
     background-image: url(../Pictures/Backgrounds/20230418_155634.jpg);
@@ -162,14 +74,12 @@
 }
     
 .Features-structures> .Column-wraper{
-    width: 1000px;
     display: flex;
     justify-content: space-between;
 }
 
 .Features-structures> .Column-wraper> .column{
     padding: 20px;
-    margin: 42px;
     text-align: center;
     border-bottom: 5px solid transparent;
     transition: 1s;
@@ -184,7 +94,6 @@
 }
 
 .Features-structures> .Column-wraper> .column :nth-child(2) {
-    width: 255px;
     transition: 0.5s;
     color: #11122b;
 }
@@ -202,37 +111,12 @@
 * {
     box-sizing: border-box;
   }
-  
-  .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content span{
-    width: fit-content;
-  }
 
-  @media (max-width:912px) {
+  @media (max-width:599px) {
     .paralax{
         padding: auto;
         flex-direction: column;
     
-    }
-    .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content p{
-        font-size: 130%;
-        padding: 5%;
-    }
-
-    .paralax> .paralax-two{
-        margin-top: 60px;  
-    }
-
-    .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content span{
-        font-size: 80%;
-    }
-
-    .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content> .btn-one{
-        float: left;
-    }
-
-    .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content> .btn-two{
-       float: right;
-       margin-top: 3px;
     }
 
     .Features-structures{
@@ -240,7 +124,6 @@
     }
 
     .Features-structures> .Column-wraper{
-        width: 100%;
         flex-direction: column;
     }
     .Features-structures> .Column-wraper> .column :nth-child(2){
@@ -249,16 +132,21 @@
     .paralax{
         height: 100%;
     }
+    
+    .paralax> .paralax-one> .Heading-1{
+        width: 265px;}
+
     .Features-structures{
-        width: 100%;
+        padding: 10px;
     }
+    .paralax> .paralax-one> .Heading-1{
+        width: min-content;
+       
+    }
+      
   }
 
-  @media (width:280px){
-    .paralax> .paralax-one{
-        padding: auto;
-    }
-  
+  @media (min-width:600px) and(max-width:1023px){
     .paralax> .paralax-one> .Heading-1{
         width: fit-content;
         font-size: x-small;
@@ -280,17 +168,11 @@
     .paralax> .paralax-one> .Heading-5{
         width: fit-content;
     }
-    
-    .paralax> .paralax-two> .Bunner> .Container> .Bunner-Content span{
-        font-size: 1px;
-        width: fit-content;
-        letter-spacing: 1px;}
+  }
 
-    .Bunner> .Container> .Bunner-Content h1{
-        font-size: 150%;
+  @media (min-width:1024px){
+    .paralax {
+       margin: 0px; 
     }
-    .Bunner> .Container> .Bunner-Content p{
-        font-size: larger;
-        
-    }
+
   }

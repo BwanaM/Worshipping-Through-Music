@@ -113,7 +113,7 @@ gap: 2px;
 }
 
 /* media Queries */
-@media (max-width:912px){
+@media (max-width:1023px){
     .Navigation-wrapper{
         flex-direction: column;
         height: 100%;

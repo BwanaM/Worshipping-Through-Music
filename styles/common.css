@@ -46,26 +46,6 @@ a {
     text-decoration: none; !important
 }
 
-/* anchor-link */
-
-.anchor-links{
-    text-decoration: none;
-}
-
-.anchor-links:focus{
-    outline: none;
-}
-
-.anchor-links h1::after{
-    font-family: "Font Awesome 5free";
-    content: :\foc1;
-    font-weight:900;
-}
-
-.hymn{
-    margin-left: 40px;
-}
-
 /* Dropdown Button */
 .dropbtn {
     background-color: transparent;
