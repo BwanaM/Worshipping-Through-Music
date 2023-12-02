@@ -1,16 +1,19 @@
 .page-container{ 
   margin-left: 0px;
   color: blue;
+  background-color: white;
 }
 
 .page-container p{
   color:black;
   line-height: 2rem;
-  font-family: 'ubuntu condensed', sans-serif;
   padding-left: 4%;
   padding-right: 4%;
   padding-bottom: 1%;
-
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  vertical-align: baseline;
 }
 .page-container p a{
     color:brown;

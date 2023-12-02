@@ -147,7 +147,7 @@
   }
 
   @media (min-width:600px) and(max-width:1023px){
-    .paralax> .paralax-one> .Heading-1{
+    /* .paralax> .paralax-one> .Heading-1{
         width: fit-content;
         font-size: x-small;
     }
@@ -168,11 +168,11 @@
     .paralax> .paralax-one> .Heading-5{
         width: fit-content;
     }
-  }
+  } */
 
   @media (min-width:1024px){
-    .paralax {
+    /* .paralax {
        margin: 0px; 
-    }
+    } */
 
   }
