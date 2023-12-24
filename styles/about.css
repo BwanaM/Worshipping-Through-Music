@@ -24,15 +24,16 @@
   font-size: small;
 }
 
-/* media Queries
-@media (max-width:599px){
+/* media Queries */
 
+@media (max-width:599px){
+  html{font-size: 12px;}
 }
 
-@media (min-width:600px) and (max-width:1023px){
+/* @media (min-width:600px) and (max-width:1023px){
 
 }
 
 @media (min-width:1024px){
 
-} */
+}  */

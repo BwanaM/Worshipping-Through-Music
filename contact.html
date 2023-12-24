@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -112,26 +111,35 @@
 
                     <div class="Form-group">
     
-                        <input type="text" name="name" placeholder="Full Name" required>
+                        <input name="firstName" id="firstName" type="text" placeholder="First Name" autocomplete="given-name"  required/>
+
+                        <label for="firstName">Enter First Name:</label>
     
-                        <label for="full name">Your Name</label>
+                    </div>
+
+                    <div class="Form-group">
+
+                        <input name="lastName" id="lastName" type="text" placeholder="Last Name" autocomplete="family-name" required/>
+
+                        <label for="lastName">Enter Last Name:</label>
     
                     </div>
     
                      <div class="Form-group">
+                        
+                        <input type="tel" id="phone" name="phone" placeholder="phone number"  autocomplete="cc-family-name" required>
 
-                        <input type="tel" name="tel" placeholder="Phone-Number" required>
-    
-                        <label for="Phone">Phone</label>
+                        <label for="phone">Enter your phone number:</label>
     
                     </div>
     
     
                     <div class="Form-group">
     
-                        <input type="text" name="Email" placeholder="Email" required>
+                        <input type="email" id="email" placeholder="Your email" name="email" required autocomplete="family-name">
+
     
-                        <label for="email">your@email.com</label>
+                        <label for="email">Enter your email:</label>
     
                     </div>
     
@@ -139,7 +147,7 @@
     
                         <textarea name="Message" id="Message" placeholder="Message"></textarea>
     
-                        <label for="Message">message</label>
+                        <label for="Message">message:</label>
     
                     </div>
     

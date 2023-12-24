@@ -119,6 +119,8 @@
     
     }
 
+    html{font-size: 12px;}
+
     .Features-structures{
         height: 100%;
     }
@@ -133,14 +135,14 @@
         height: 100%;
     }
     
-    .paralax> .paralax-one> .Heading-1{
-        width: 265px;}
-
+    /* .paralax> .paralax-one> .Heading-1{
+        width: 265px;} */
+/* 
     .Features-structures{
         padding: 10px;
-    }
-    .paralax> .paralax-one> .Heading-1{
-        width: min-content;
+    } */
+    /* .paralax> .paralax-one> .Heading-1{
+        width: fit-content; */
        
     }
       

@@ -46,6 +46,8 @@
         grid-template-columns: 1fr;
     }
 
+    html{font-size: 12px;}
+
     .square-text-wrapper{
         order: 1;
     }
