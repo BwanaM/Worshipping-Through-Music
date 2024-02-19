@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     
     <link rel="stylesheet" href="styles/footer.css">
+    <!-- <link rel="stylesheet" href="styles/hymnsearch.css"> -->
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/skewed.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/books.css">
     <link rel="stylesheet" href="styles/adverts.css">
+    <script src="search.js"></script>
     <link rel="icon" type="image/x-icon" href="./favicon.ico.jpg">
      
 </head>
@@ -117,908 +119,473 @@
     <div class="spacer20"></div>
 
     <div class="Hymns-wrapper" id="Bemba Hymns">
-        
-        <div class="Batch1">
-            <div class="hymn">
-                <a href="Books/Hymn Books/hymn1.html"> <p>1. MWE BANTU BONSE BA PANSHI</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn2.html"> <p>2. ITOTELENI MFUMU NKALAMBA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn3.html"> <p>3. TWAMULUMBANYA MWE LESA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn4.html"> <p>4. WA MUSHILO WINE, LESA WA MAKA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn5.html"> <p>5. SHIKULU E MFUMU; CALO</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn6.html"> <p>6. SHIFWE WA LUSE LWAKULA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn7.html"> <p>7. TUCINDIKE NO KWANGA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn8.html"> <p>8. WE MUTIMA, ULUMBANYE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn9.html"> <p>9. FIBUMBWA FYONSE FYA PANSHI</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn10.html"> <p>10. INDIMI SHINGI NDEFWAYA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn11.html"> <p>11. SUMBULENI IMITWE MWE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn12.html"> <p>12. TULUMBANISHA MAKA YE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn13.html"> <p>13. LUMBANYENI YESU UWATUUBULA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn14.html"> <p>14. TUSEKELYO MWINE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn15.html"> <p>15. NATOTLWE LESA, WA MAKA YONSE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn16.html"> <p>16. MAKANA NA MAKANA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn17.html"> <p>17. NE SESE NE PENGA 'BENGI BALIKO</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn18.html"> <p>18. PA BUSUMA BWA CALO</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn19.html"> <p>19. TULUMBANYE LESA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn20.html"> <p>20. MWE LESA, KAFWA WA KALE </p></a>
-                </div>
 
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn21.html"> <p>21. TATA WESU TULI PA NTANSHI PENU</p></a>
-                </div>
+        <div class="container">
+            <input id="searchbar"
+                onkeyup="search_hymns()"
+                type="text" name="search"
+                placeholder="Search for a hymn..">
+    
+            <ul id='list'>
+                <div class="Batch1">
+                    <li class="hymns"><a href="Books/Hymn Books/hymn1.html"> <p>1. MWE BANTU BONSE BA PANSHI</p></a></li>
 
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn22.html"> <p>22. LESA WANDI, LESA WANDI, MPUSUSHENI INE</p></a>
-                </div>
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn2.html"> <p>2. ITOTELENI MFUMU NKALAMBA</p></a></li>
 
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn23.html"> <p>23. LESA EKACEMA WANDI  </p></a>
-                </div>
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn3.html"> <p>3. TWAMULUMBANYA MWE LESA </p></a></li>
 
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn24.html"> <p>24. MFUMU YA LUSE KACEMA </p></a>
-                </div>
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn4.html"> <p>4. WA MUSHILO WINE, LESA WA MAKA</p></a></li>
 
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn25.html"> <p>25. IMFUMU YESU KRISTU </p></a>
-                </div>
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn5.html"> <p>5. SHIKULU E MFUMU; CALO</p></a></li>
 
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn26.html"> <p>26. UMFWENU BALEAULA   </p></a>
-                </div>
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn6.html"> <p>6. SHIFWE WA LUSE LWAKULA</p></a></li>
 
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn27.html"> <p>27. SHISENI, MWE IMMANUEL</p></a>
-                </div>
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn7.html"> <p>7. TUCINDIKE NO KWANGA</p></a></li>
 
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn28.html"> <p>28. UMFWENI ABA KU MULU</p></a>
-                </div>
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn8.html"> <p>8. WE MUTIMA, ULUMBANYE</p></a></li>
 
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn29.html"> <p>29. BAKAKUMBA BAPEMPWILE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn30.html"> <p>30. LYAISHILE UBUSHIKU</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn31.html"> <p>31. NI MU MUSHI WA KWA DABIDI </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn32.html"> <p>32. AKAMUSHI BETLEHEME </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn33.html"> <p>33. KULI IFWE AFYALILWA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn34.html"> <p>34. OWE , NSEKO ! IMFUMWI YI! </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn35.html"> <p>35. MONENI MU MULIMBA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn36.html"> <p>36. IFYO BANTU BA KALE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn37.html"> <p>37. NANI ULYA MWI TANGA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn38.html"> <p>38. MWASHO BUFUMU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn39.html"> <p>39. LYA KUTEMWO KUCILA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn40.html"> <p>40. LULUMBI NO MUCINSHI </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn41.html"> <p>41. LINTU NAKUTUMANINA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn42.html"> <p>42. ISO KO NDI, WANAKA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn43.html"> <p>43. ISO WANAKA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn44.html"> <p> 44. SHIWI LYAIKALA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn45.html"> <p>45. MWE CILIBWE CA KALE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn46.html"> <p>46. LESA WESU ATEMENWE CALO</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn47.html"> <p>47. YESU, 'YU MWANA LESA, YESU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn48.html"> <p>48. SHINA LYA YESU BUSUMA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn49.html"> <p>49. MWE LESA, MWE LUSE LWINE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn50.html"> <p>50. NI KACEMA WESU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn51.html"> <p>51. YESU E KAAFWA WESU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn52.html"> <p>52. ISHIWI LYA MFUMU LILETI </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn53.html"> <p>53. WE LUNKUBWA LWA FYUMA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn54.html"> <p>54. YESU ATUTEMWA BONSE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn55.html"> <p>55. KULI KAPILI KUTALI </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn56.html"> <p>56. PA KULOLESHA LUPANDA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn57.html"> <p>57. WA KUCULA ISHINA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn58.html"> <p>58. CINE YESU ANCULILE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn59.html"> <p>59. MWE BANTU TALALENI</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn60.html"> <p>60. EE BULANDA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn61.html"> <p>61. OWE, OWE MWE BANTU UMFWENI SHIWI</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn62.html"> <p>62. YESU BALIMUSULILE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn63.html"> <p>63.  YESU NI KU KALFALI</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn64.html"> <p>64. TULETASHO WATUFWILA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn65.html"> <p>65 BALONGANA ‘BABUFI BAPANGANA ‘KUMUTANIKA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn66.html"> <p>66. MONA UMWANA WA MPANGA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn67.html"> <p>67. PALYA PA LUPANDA MWE YESU AMFWILE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn68.html"> <p>68. KATULA WANDI WATUNGULULWA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn69.html"> <p>69. KRISTU NASHUKUKE LELO </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn70.html"> <p>70. YESU ALIYAIMA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn71.html"> <p>71. KULWA KWAPWA NO KUCULA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn72.html"> <p>72. MWE BANA INSANSA.</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn73.html"> <p>73. MU NSHISHI ALELE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn74.html"> <p>74. OWE! UKWIMA KULIPO </p></a>
-                </div>
-        
-
-        </div>
-        
-        <div class="Batch2">
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn75.html"> <p>75. YESU WENE AKATEKA </p></a>
-                </div>
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn9.html"> <p>9. FIBUMBWA FYONSE FYA PANSHI</p></a></li>
+                   
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn10.html"> <p>10. INDIMI SHINGI NDEFWAYA</p></a></li>
                     
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn76.html"> <p>76. TUCELELE IMFUMU </p></a>
-                </div>
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn11.html"> <p>11. SUMBULENI IMITWE MWE</p></a></li>
                     
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn77.html"> <p>77. YESU PE FYE MWABAPO </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn78.html"> <p>78. APWE PENGA LYA KWA LESA</p></a>
-                </div>
-
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn79.html"> <p>79. MUFWIKE NGALA KRISTU MFUMU! </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn80.html"> <p>80. UWAFWIKILWE IMYUNGA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn81.html"> <p>81. LINTU YESU ASHALIKYA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn82.html"> <p>82. MWISE, MUPASHI BULESA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn83.html"> <p>83. MWE MUPU BULESA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn84.html"> <p>84. MWE MUPASHI WA KWA LESA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn85.html"> <p>85. UMUPASHI WA LUSE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn86.html"> <p>86. MWISE, TULI SHAMPOFU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn87.html"> <p>87. YESU M'TUME M'PASHI</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn88.html"> <p>88. CILONGANINO CABA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn89.html"> <p>89. MWE LESA WA KU BETELE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn90.html"> <p>90. CIFULO TWATEMWA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn91.html"> <p>91. BATATA, BATATA TULI PANO</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn92.html"> <p>92. LESA MU NGANDE YI</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn93.html"> <p>93. ULUCELO</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn94.html"> <p>94. YESU E PO MUBE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn95.html"> <p>95. MWI SHINA LYA KWA YESU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn96.html"> <p>96. MWE LESA WANDI, MUBE NA INE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn97.html"> <p>97. BWA LELO BWAPWA, MWE KABUMBA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn98.html"> <p>98. AKASUBA KAWA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn99.html"> <p>99. NI MWE KASUBA KA MWEO </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn100.html"> <p>100. MUTUFUMYE NO BUPALO </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn101.html"> <p>101. LESA WANDI NATOTELA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn102.html"> <p>102. MWE MFUMU TWALETA BANA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn103.html"> <p>103. KATULA AISA KANA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn104.html"> <p>104. BULENI UBWIKASHI </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn105.html"> <p>105. MWE TATA MUBASUMINISHE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn106.html"> <p>106. NI KUNO TWAMONANA, MWE MFUMU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn107.html"> <p>107. NSHAWAMINA, MWE MFUMU YANDI </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn108.html"> <p>108. KRISTU E WATULUBULA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn109.html"> <p>109. KU CINTAMBA CA MFUMU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn110.html"> <p>110. NI KATULA, PA MFWA YAKWE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn111.html"> <p>111. YESU NI NTULO YA NSANSA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn112.html"> <p>112. APO NDEILINGULULA 'NDI MUBEMBU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn113.html"> <p>113. TULI PANO PA MULALILO </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn114.html"> <p>114. MWE LUSE LUTUNTULU NO LWA BUPE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn115.html"> <p>115. MWE BA SHIFWE, KALENGA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn116.html"> <p>116. ABAFWA BASHUKA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn117.html"> <p>117. PAMO NA SHIKULU! </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn118.html"> <p>118.  MILIMO MUKUSHE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn119.html"> <p>119. SHINGANGA ALI MUPEPI </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn120.html"> <p>120. NDEFWAYA IMWE PE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn121.html"> <p>121. CINTU CAKUTUSUNGUSHA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn122.html"> <p>122. SEKELELENI! KALUBULA 'ISA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn123.html"> <p>123. ISHIWI NDEUMFWA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn124.html"> <p>124. MWE UMFWENI IMBILA NSUMA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn125.html"> <p>125. BONSE NATULUMBE LESU WESU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn126.html"> <p>126. MWE KATULA MWINCILILA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn127.html"> <p>127. NOMBO KWISHIBA NAISHIBA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn128.html"> <p>128. ONSE UTEMENWE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn129.html"> <p>129.  MWISE KWA YESU, MWIKOKOLA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn130.html"> <p>130. KULYU BWITE BULEFUMA KWI SHILYA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn131.html"> <p>131. TANDE NSHIKU SHONSE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn132.html"> <p>132. NA LIMBI 'IYO WE MUTIMA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn133.html"> <p>133. KATULA UMO WINE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn134.html"> <p>134. IMPONGOLO YAISUKA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn135.html"> <p>135. BUSHE, IWE NAUNAKA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn136.html"> <p>136. BULE SHINA LYA KWA YESU</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn137.html"> <p>137. UMFWA, WE MUTIMA WANDI</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn138.html"> <p>138. YESU KALE AMFWAILE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn139.html"> <p>139. AFUMINE KU MULU</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn140.html"> <p>140. KUFWAYA ABALUBA KWEKA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn141.html"> <p>141. YA KWA YESU IMBILA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn142.html"> <p>142.  SHIKULU YESU NDEKUTA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn143.html"> <p>143.  BWELA,MWANA WALUBILE</p></a>
-                </div>
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn12.html"> <p>12. TULUMBANISHA MAKA YE</p></a></li>
+                   
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn13.html"> <p>13. LUMBANYENI YESU UWATUUBULA</p></a></li>
                     
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn144.html"> <p>144. YESU AITA BABI</p></a>
-                </div>
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn14.html"> <p>14. TUSEKELYO MWINE</p></a></li>
                     
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn145.html"> <p>145. BWELA WE WALUBA, WE WANAKA</p></a>
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn15.html"> <p>15. NATOTLWE LESA, WA MAKA YONSE</p></a></li>
+                    
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn16.html"> <p>16. MAKANA NA MAKANA</p></a></li>
+                   
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn17.html"> <p>17. NE SESE NE PENGA 'BENGI BALIKO</p></a></li>
+                    
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn18.html"> <p>18. PA BUSUMA BWA CALO</p></a></li>
+                   
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn19.html"> <p>19. TULUMBANYE LESA</p></a></li>
+                    
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn20.html"> <p>20. MWE LESA, KAFWA WA KALE </p></a></li>
+                    
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn21.html"> <p>21. TATA WESU TULI PA NTANSHI PENU</p></a></li>
+                    
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn22.html"> <p>22. LESA WANDI, LESA WANDI, MPUSUSHENI INE</p></a></li>
+                    
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn23.html"> <p>23. LESA EKACEMA WANDI  </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn24.html"> <p>24. MFUMU YA LUSE KACEMA </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn25.html"> <p>25. IMFUMU YESU KRISTU </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn26.html"> <p>26. UMFWENU BALEAULA   </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn27.html"> <p>27. SHISENI, MWE IMMANUEL</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn28.html"> <p>28. UMFWENI ABA KU MULU</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn29.html"> <p>29. BAKAKUMBA BAPEMPWILE </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn30.html"> <p>30. LYAISHILE UBUSHIKU</p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn31.html"> <p>31. NI MU MUSHI WA KWA DABIDI </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn32.html"> <p>32. AKAMUSHI BETLEHEME </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn33.html"> <p>33. KULI IFWE AFYALILWA </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn34.html"> <p>34. OWE , NSEKO ! IMFUMWI YI! </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn35.html"> <p>35. MONENI MU MULIMBA </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn36.html"> <p>36. IFYO BANTU BA KALE </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn37.html"> <p>37. NANI ULYA MWI TANGA </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn38.html"> <p>38. MWASHO BUFUMU </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn39.html"> <p>39. LYA KUTEMWO KUCILA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn40.html"> <p>40. LULUMBI NO MUCINSHI </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn41.html"> <p>41. LINTU NAKUTUMANINA </p></a></li>
+                
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn42.html"> <p>42. ISO KO NDI, WANAKA </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn43.html"> <p>43. ISO WANAKA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn44.html"> <p> 44. SHIWI LYAIKALA</p></a></li>
+        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn45.html"> <p>45. MWE CILIBWE CA KALE </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn46.html"> <p>46. LESA WESU ATEMENWE CALO</p></a></li>
+    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn47.html"> <p>47. YESU, 'YU MWANA LESA, YESU </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn48.html"> <p>48. SHINA LYA YESU BUSUMA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn49.html"> <p>49. MWE LESA, MWE LUSE LWINE </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn50.html"> <p>50. NI KACEMA WESU </p></a></li>
+                
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn51.html"> <p>51. YESU E KAAFWA WESU </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn52.html"> <p>52. ISHIWI LYA MFUMU LILETI </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn53.html"> <p>53. WE LUNKUBWA LWA FYUMA</p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn54.html"> <p>54. YESU ATUTEMWA BONSE </p></a></li>
+                
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn55.html"> <p>55. KULI KAPILI KUTALI </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn56.html"> <p>56. PA KULOLESHA LUPANDA </p></a></li>
+                
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn57.html"> <p>57. WA KUCULA ISHINA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn58.html"> <p>58. CINE YESU ANCULILE </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn59.html"> <p>59. MWE BANTU TALALENI</p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn60.html"> <p>60. EE BULANDA</p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn61.html"> <p>61. OWE, OWE MWE BANTU UMFWENI SHIWI</p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn62.html"> <p>62. YESU BALIMUSULILE</p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn63.html"> <p>63.  YESU NI KU KALFALI</p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn64.html"> <p>64. TULETASHO WATUFWILA </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn65.html"> <p>65 BALONGANA ‘BABUFI BAPANGANA ‘KUMUTANIKA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn66.html"> <p>66. MONA UMWANA WA MPANGA </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn67.html"> <p>67. PALYA PA LUPANDA MWE YESU AMFWILE </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn68.html"> <p>68. KATULA WANDI WATUNGULULWA </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn69.html"> <p>69. KRISTU NASHUKUKE LELO </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn70.html"> <p>70. YESU ALIYAIMA </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn71.html"> <p>71. KULWA KWAPWA NO KUCULA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn72.html"> <p>72. MWE BANA INSANSA.</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn73.html"> <p>73. MU NSHISHI ALELE </p></a></li>
+                
+                    <li class="hymns"><a href="Books/Hymn Books/hymn74.html"> <p>74. OWE! UKWIMA KULIPO </p></a></li>
+
                 </div>
         
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn146.html"> <p>146. MWE YESU MWALINTEMWA</p></a>
+                <div class="Batch2">
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn75.html"> <p>75. YESU WENE AKATEKA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn76.html"> <p>76. TUCELELE IMFUMU </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn77.html"> <p>77. YESU PE FYE MWABAPO </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn78.html"> <p>78. APWE PENGA LYA KWA LESA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn79.html"> <p>79. MUFWIKE NGALA KRISTU MFUMU! </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn80.html"> <p>80. UWAFWIKILWE IMYUNGA </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn81.html"> <p>81. LINTU YESU ASHALIKYA </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn82.html"> <p>82. MWISE, MUPASHI BULESA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn83.html"> <p>83. MWE MUPU BULESA </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn84.html"> <p>84. MWE MUPASHI WA KWA LESA</p></a></li>
+                    
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn85.html"> <p>85. UMUPASHI WA LUSE </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn86.html"> <p>86. MWISE, TULI SHAMPOFU </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn87.html"> <p>87. YESU M'TUME M'PASHI</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn88.html"> <p>88. CILONGANINO CABA</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn89.html"> <p>89. MWE LESA WA KU BETELE </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn90.html"> <p>90. CIFULO TWATEMWA </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn91.html"> <p>91. BATATA, BATATA TULI PANO</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn92.html"> <p>92. LESA MU NGANDE YI</p></a></li>
+                        
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn93.html"> <p>93. ULUCELO</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn94.html"> <p>94. YESU E PO MUBE</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn95.html"> <p>95. MWI SHINA LYA KWA YESU </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn96.html"> <p>96. MWE LESA WANDI, MUBE NA INE </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn97.html"> <p>97. BWA LELO BWAPWA, MWE KABUMBA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn98.html"> <p>98. AKASUBA KAWA</p></a></li>
+                    
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn99.html"> <p>99. NI MWE KASUBA KA MWEO </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn100.html"> <p>100. MUTUFUMYE NO BUPALO </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn101.html"> <p>101. LESA WANDI NATOTELA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn102.html"> <p>102. MWE MFUMU TWALETA BANA </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn103.html"> <p>103. KATULA AISA KANA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn104.html"> <p>104. BULENI UBWIKASHI </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn105.html"> <p>105. MWE TATA MUBASUMINISHE </p></a></li>
+                    
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn106.html"> <p>106. NI KUNO TWAMONANA, MWE MFUMU </p></a></li>
+                    
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn107.html"> <p>107. NSHAWAMINA, MWE MFUMU YANDI </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn108.html"> <p>108. KRISTU E WATULUBULA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn109.html"> <p>109. KU CINTAMBA CA MFUMU </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn110.html"> <p>110. NI KATULA, PA MFWA YAKWE</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn111.html"> <p>111. YESU NI NTULO YA NSANSA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn112.html"> <p>112. APO NDEILINGULULA 'NDI MUBEMBU </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn113.html"> <p>113. TULI PANO PA MULALILO </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn114.html"> <p>114. MWE LUSE LUTUNTULU NO LWA BUPE </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn115.html"> <p>115. MWE BA SHIFWE, KALENGA </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn116.html"> <p>116. ABAFWA BASHUKA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn117.html"> <p>117. PAMO NA SHIKULU! </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn118.html"> <p>118.  MILIMO MUKUSHE</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn119.html"> <p>119. SHINGANGA ALI MUPEPI </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn120.html"> <p>120. NDEFWAYA IMWE PE </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn121.html"> <p>121. CINTU CAKUTUSUNGUSHA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn122.html"> <p>122. SEKELELENI! KALUBULA 'ISA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn123.html"> <p>123. ISHIWI NDEUMFWA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn124.html"> <p>124. MWE UMFWENI IMBILA NSUMA </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn125.html"> <p>125. BONSE NATULUMBE LESU WESU </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn126.html"> <p>126. MWE KATULA MWINCILILA </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn127.html"> <p>127. NOMBO KWISHIBA NAISHIBA </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn128.html"> <p>128. ONSE UTEMENWE</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn129.html"> <p>129.  MWISE KWA YESU, MWIKOKOLA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn130.html"> <p>130. KULYU BWITE BULEFUMA KWI SHILYA </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn131.html"> <p>131. TANDE NSHIKU SHONSE </p></a></li>
+                    
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn132.html"> <p>132. NA LIMBI 'IYO WE MUTIMA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn133.html"> <p>133. KATULA UMO WINE</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn134.html"> <p>134. IMPONGOLO YAISUKA</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn135.html"> <p>135. BUSHE, IWE NAUNAKA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn136.html"> <p>136. BULE SHINA LYA KWA YESU</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn137.html"> <p>137. UMFWA, WE MUTIMA WANDI</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn138.html"> <p>138. YESU KALE AMFWAILE</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn139.html"> <p>139. AFUMINE KU MULU</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn140.html"> <p>140. KUFWAYA ABALUBA KWEKA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn141.html"> <p>141. YA KWA YESU IMBILA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn142.html"> <p>142.  SHIKULU YESU NDEKUTA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn143.html"> <p>143.  BWELA,MWANA WALUBILE</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn144.html"> <p>144. YESU AITA BABI</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn145.html"> <p>145. BWELA WE WALUBA, WE WANAKA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn146.html"> <p>146. MWE YESU MWALINTEMWA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn147.html"> <p>147. NIMWE NDESUBILA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn148.html"> <p>148. INE, UMWEO WANDINI YESU</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn149.html"> <p>149. MWE MPUKA BA KRISTU</p></a></li>
+                    
                 </div>
 
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn147.html"> <p>147. NIMWE NDESUBILA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn148.html"> <p>148. INE, UMWEO WANDINI YESU</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn149.html"> <p>149. MWE MPUKA BA KRISTU</p></a>
-                </div>
-        </div>
+                <div class="Batch3">
+                
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn150.html"> <p>150. MU BUSHIKU BWA BULANDA</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn151.html"> <p>151. MWE BASHILIKALE</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn152.html"> <p>152. MWIMININENI YESU!</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn153.html"> <p>153. MWE FITA FYA LUPANDA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn154.html"> <p>154. WE FIBI, FUMA</p></a></li>
+                    
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn155.html"> <p>155. MWE MPUKA YA BALENDO</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn156.html"> <p>156. ILINTU MUTENDE ULEYA NA INE</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn157.html"> <p>157. UMUTENDE,MU CALO CABIPA</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn158.html"> <p>158.NDI WENU MFUMU, NALYUMFWA SHIWI</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn159.html"> <p>159. YESU NAMUTEMWA SHIKULU WANDI</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn160.html"> <p>160. MWE MFUMU M NSOSHE, NSOSE</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn161.html"> <p>161. UBUFUMU BWISE</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn162.html"> <p>162. MWE KRISTU, KATEKA</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn163.html"> <p>163. UPEPE LESA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn164.html"> <p>164. UKUPEPA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn165.html"> <p>165. MWE MFUMU, E CAWAMISHA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn166.html"> <p>166. PEPENI LESA MU MUSHILO WAYEMBA</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn167.html"> <p>167. TWAISA, TWAISA M' NGANDA</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn168.html"> <p>168. MWE CENGE CA LUSE, NTUNGULUSHI</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn169.html"> <p>169. MWISE NJAFWA, LESA M'KULU</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn170.html"> <p>170. WE MULENDO ULEYS KWI?</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn171.html"> <p>171. LESA MUTUPALE </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn172.html"> <p>172. YESU NYENSHA NILUBA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn173.html"> <p>173. MU BULANDA BONSE UBO USANGA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn174.html"> <p>174. MWE MFUMU NYENDE NA IMWE </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn175.html"> <p>175. KU MINWE LESA NJIKATA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn176.html"> <p>176. MFISA MWE MFUMU MWE BENE </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn177.html"> <p>177. YESU MUTWENSHE </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn178.html"> <p>178. ULIKO MUSUMBA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn179.html"> <p>179. UMWEO MWAPELE </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn180.html"> <p>180. IFYO NDI, -NSHITELEBWILA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn181.html"> <p>181. YESU ALETWITA BONSE </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn182.html"> <p>182 BUNO BUSHIKU KUSHUKA  </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn183.html"> <p>183. MWE YESU NINSUMINO </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn184.html"> <p>184. ESHA PE, USHILE, UMFWE KU MFUMU </p></a></li>
+                    
+                    <li class="hymns"> <a href="Books/Hymn Books/hymn185.html"> <p>185. TE KUTI NKANE YESU YO </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn186.html"> <p>186. TULEYAKU KUBYALA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn187.html"> <p>187. TULIMA NO KUTANDA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn188.html"> <p>188. MFUMU YA MULU NA PANSHI </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn189.html"> <p>189. YEMWE, TUYEMFYA BANE</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn190.html"> <p>190. LESA ABE NEMWE NSHIKU PE </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn191.html"> <p>191. NOMBA PA KWINGILA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn192.html"> <p>192. MWAKA UMBI WALIPITA </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn193.html"> <p>193. TATA TWENDE NE MWE PE </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn194.html"> <p>194. TULI ABANA BANONO </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn195.html"> <p>195. BANA BA KWA KRISTU </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn196.html"> <p>196. YESU MFUMU ANTEMWA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn197.html"> <p>197. CAYEMBE CIBI 'CALO </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn198.html"> <p>198. MWICITA IFIBI </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn199.html"> <p>199. UTWA M' YERUSALEMU </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn200.html"> <p>200.  NDESEKELA TATA WA MU MULU</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn201.html"> <p>201. YESU UWALI MU MULU </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn202.html"> <p>202. PE FYE LESA 'LIPO </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn203.html"> <p>203. MWE BANA, TEMWENI YESU </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn204.html"> <p>204. MUCITE MBE ULUBUTO </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn205.html"> <p>205. MWE LESA MULU BAKULU </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn206.html"> <p>206. BA KWA LESA BAFUMINE </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn207.html"> <p>207. NJISE KULI YESU </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn208.html"> <p>208. FYAPYA MWI BALA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn209.html"> <p>209. MWE SHIFWE WA MU MULU </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn210.html"> <p>210. ISUBILO LYA BAPOSTOLI</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn211.html"> <p>211. TWAMULUMBANYA IMWE MWE LESA</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn212.html"> <p>212. KALE UBUSHIKU </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn213.html"> <p>213. MWE BAKACEMA MU MPANGA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn214.html"> <p>214. FIMUTI FYA MU MPANGA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn215.html"> <p>215. KWAFYALILWE KULI FWE </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn216.html"> <p>216. BUSHIKU BWASHILA </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn217.html"> <p>217. YEMWE BETLEHEMU </p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn218.html"> <p>218. MUTENDE KU BANTU BONSE</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn219.html"> <p>219. FWE BALENDO TWAFUMA KONSE KONSE</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn220.html"> <p>220. BALANDA, BAFUKE</p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn221.html"> <p>221. LINTU YESU AFYELWE</p></a></li>
+                    
+                    <li class="hymns"><a href="Books/Hymn Books/hymn222.html"> <p>222. MUPALE CI CALO </p></a></li>
+                        
+                    <li class="hymns"><a href="Books/Hymn Books/hymn223.html"> <p>223. KAMUPALAMINE  </p></a></li>
+                    
 
-        <div class="Batch3">
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn150.html"> <p>150. MU BUSHIKU BWA BULANDA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn151.html"> <p>151. MWE BASHILIKALE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn152.html"> <p>152. MWIMININENI YESU!</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn153.html"> <p>153. MWE FITA FYA LUPANDA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn154.html"> <p>154. WE FIBI, FUMA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn155.html"> <p>155. MWE MPUKA YA BALENDO</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn156.html"> <p>156. ILINTU MUTENDE ULEYA NA INE</p></a>
-                </div>
-            
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn157.html"> <p>157. UMUTENDE,MU CALO CABIPA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn158.html"> <p>158.NDI WENU MFUMU, NALYUMFWA SHIWI</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn159.html"> <p>159. YESU NAMUTEMWA SHIKULU WANDI</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn160.html"> <p>160. MWE MFUMU M NSOSHE, NSOSE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn161.html"> <p>161. UBUFUMU BWISE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn162.html"> <p>162. MWE KRISTU, KATEKA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn163.html"> <p>163. UPEPE LESA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn164.html"> <p>164. UKUPEPA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn165.html"> <p>165. MWE MFUMU, E CAWAMISHA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn166.html"> <p>166. PEPENI LESA MU MUSHILO WAYEMBA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn167.html"> <p>167. TWAISA, TWAISA M' NGANDA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn168.html"> <p>168. MWE CENGE CA LUSE, NTUNGULUSHI</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn169.html"> <p>169. MWISE NJAFWA, LESA M'KULU</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn170.html"> <p>170. WE MULENDO ULEYS KWI?</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn171.html"> <p>171. LESA MUTUPALE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn172.html"> <p>172. YESU NYENSHA NILUBA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn173.html"> <p>173. MU BULANDA BONSE UBO USANGA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn174.html"> <p>174. MWE MFUMU NYENDE NA IMWE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn175.html"> <p>175. KU MINWE LESA NJIKATA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn176.html"> <p>176. MFISA MWE MFUMU MWE BENE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn177.html"> <p>177. YESU MUTWENSHE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn178.html"> <p>178. ULIKO MUSUMBA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn179.html"> <p>179. UMWEO MWAPELE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn180.html"> <p>180. IFYO NDI, -NSHITELEBWILA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn181.html"> <p>181. YESU ALETWITA BONSE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn182.html"> <p>182 BUNO BUSHIKU KUSHUKA  </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn183.html"> <p>183. MWE YESU NINSUMINO </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn184.html"> <p>184. ESHA PE, USHILE, UMFWE KU MFUMU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn185.html"> <p>185. TE KUTI NKANE YESU YO </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn186.html"> <p>186. TULEYAKU KUBYALA</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn187.html"> <p>187. TULIMA NO KUTANDA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn188.html"> <p>188. MFUMU YA MULU NA PANSHI </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn189.html"> <p>189. YEMWE, TUYEMFYA BANE</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn190.html"> <p>190. LESA ABE NEMWE NSHIKU PE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn191.html"> <p>191. NOMBA PA KWINGILA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn192.html"> <p>192. MWAKA UMBI WALIPITA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn193.html"> <p>193. TATA TWENDE NE MWE PE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn194.html"> <p>194. TULI ABANA BANONO </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn195.html"> <p>195. BANA BA KWA KRISTU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn196.html"> <p>196. YESU MFUMU ANTEMWA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn197.html"> <p>197. CAYEMBE CIBI 'CALO </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn198.html"> <p>198. MWICITA IFIBI </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn199.html"> <p>199. UTWA M' YERUSALEMU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn200.html"> <p>200.  NDESEKELA TATA WA MU MULU</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn201.html"> <p>201. YESU UWALI MU MULU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn202.html"> <p>202. PE FYE LESA 'LIPO </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn203.html"> <p>203. MWE BANA, TEMWENI YESU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn204.html"> <p>204. MUCITE MBE ULUBUTO </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn205.html"> <p>205. MWE LESA MULU BAKULU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn206.html"> <p>206. BA KWA LESA BAFUMINE </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn207.html"> <p>207. NJISE KULI YESU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn208.html"> <p>208. FYAPYA MWI BALA </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn209.html"> <p>209. MWE SHIFWE WA MU MULU </p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn210.html"> <p>210. ISUBILO LYA BAPOSTOLI</p></a>
-                </div>
-        
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn211.html"> <p>211. TWAMULUMBANYA IMWE MWE LESA</p></a>
-                </div>
-
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn212.html"> <p>212. KALE UBUSHIKU </p></a>
-                </div>
-
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn213.html"> <p>213. MWE BAKACEMA MU MPANGA </p></a>
-                </div>
-
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn214.html"> <p>214. FIMUTI FYA MU MPANGA </p></a>
-                </div>
-
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn215.html"> <p>215. KWAFYALILWE KULI FWE </p></a>
-                </div>
-
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn216.html"> <p>216. BUSHIKU BWASHILA </p></a>
-                </div>
-
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn217.html"> <p>217. YEMWE BETLEHEMU </p></a>
-                </div>
-
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn218.html"> <p>218. MUTENDE KU BANTU BONSE</p></a>
-                </div>
-
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn219.html"> <p>219. FWE BALENDO TWAFUMA KONSE KONSE</p></a>
-                </div>
-
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn220.html"> <p>220. BALANDA, BAFUKE</p></a>
-                </div>
-
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn221.html"> <p>221. LINTU YESU AFYELWE</p></a>
-                </div>
-
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn222.html"> <p>222. MUPALE CI CALO </p></a>
-                </div>
-
-                <div class="hymn">
-                    <a href="Books/Hymn Books/hymn223.html"> <p>223. KAMUPALAMINE  </p></a>
-                </div>
-
-        
+                
+            </div>
         </div>
     </div>
 

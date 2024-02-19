@@ -1,9 +1,9 @@
-.Hymns-wrapper{
+#list{
     height: fit-content;
     background-color: #11122b;
     color: #cbcbcb;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     padding-left: 10%;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -24,11 +24,21 @@
   justify-content: center;
   align-items: center;
 }
+#searchbar {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	width: 50%;
+	box-sizing: border-box;
+}
 
-.hymn a{
+#list{
+  list-style: none;
+}
+.hymns a{
   transform: o.5s;
 }
-.hymn a:hover{
+.hymns a:hover{
  color: #cea135;
 }
 
@@ -45,7 +55,7 @@
 
 /* media Queries */
 @media (max-width:1023px){
-  .Hymns-wrapper{
+  .#list{
     height: fit-content;
     grid-template-columns: 1fr;
     padding-left: auto;
