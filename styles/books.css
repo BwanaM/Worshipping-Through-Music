@@ -6,19 +6,15 @@
     grid-template-columns: 1fr;
     padding-left: 10%;
     padding-top: 3%;
-    padding-bottom: 3%;
-   
+    padding-bottom: 3%; 
 }
-
 .heading{
    background-color: red;
    width: 310px;
    color: black; 
    border-top-right-radius: 50px;
-   border: 2px solid #11122b;
-   
+   border: 2px solid #11122b; 
 }
-
 .heading{
   display: flex;
   justify-content: center;
@@ -31,7 +27,6 @@
 	width: 50%;
 	box-sizing: border-box;
 }
-
 #list{
   list-style: none;
 }
@@ -41,19 +36,15 @@
 .hymns a:hover{
  color: #cea135;
 }
-
 .Top-wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 2%;
 }
-
 .Top-wrapper> .download-link h2 a{
   color: aqua;
 }
-
-/* media Queries */
 @media (max-width:1023px){
   .#list{
     height: fit-content;
@@ -68,7 +59,6 @@
     flex-direction: column-reverse;
   }
 }
-
 @media (max-width:599px) {
   html{font-size: 12px;}
 }

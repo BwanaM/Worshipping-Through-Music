@@ -1,5 +1,3 @@
-// JavaScript code for hidding text 
-
 function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
@@ -15,11 +13,6 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
-
-
-
-  // JavaScript code for a search Button
-
 function search_hymns() {
   let input = document.getElementById('searchbar').value
   input = input.toLowerCase();
@@ -33,5 +26,4 @@ function search_hymns() {
     x[i].style.display = "list-item";
     }
   }
-  }
-  
+  } 

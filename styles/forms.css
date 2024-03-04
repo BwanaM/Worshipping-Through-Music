@@ -1,9 +1,7 @@
 .Page-Container> .Contact-grid-wrapper> .form-Container>.Form> .Form-group{
     margin-top: 30px;
     margin-bottom: 30px;
-
 }
-
 .Page-Container> .Contact-grid-wrapper> .form-Container>.Form> .Form-group input{
     font-size: 1.5rem;
     font-family: inherit;
@@ -16,7 +14,6 @@
     display: block;
     transition: all 0.3s;
 }
-
 .Page-Container> .Contact-grid-wrapper> .form-Container>.Form> .Form-group textarea{
    margin-top: 20px;
    width: 100%;
@@ -29,7 +26,6 @@
    padding: 1.5rem 2rem;
    transition: all 0.3s;
 }
-
 .btn{
     background-color: #cea135;
     color: #11122b;
@@ -39,9 +35,7 @@
     border-radius: 2px;
     outline: none;
     transition: 0.3s;
-    
 }
-
 label{
     font-size: 1.2rem;
     font-weight: 700;
@@ -52,45 +46,35 @@ label{
     visibility: hidden;
     opacity: 0;
 }
-
 .Page-Container> .Contact-grid-wrapper> .form-Container>.Form> .Form-group input:focus{
     outline: none;
     box-shadow: 0 1rem 2rem rgba(o, 0, 0, 0.1);
     border-bottom: 3px solid #cea135;
 }
-
 .Page-Container> .Contact-grid-wrapper> .form-Container>.Form> .Form-group textarea:focus{
     outline: none;
     box-shadow: 0 1rem 2rem rgba(o, 0, 0, 0.1);
     border: 3px solid #cea135;
 }
-
 .Form-group input::-webkit-input-placeholder, .Form-group textarea::-webkit-input-placeholder{
     color: #11122b;
 }
-
 .Form-group input:focus+label, .Form-group textarea:focus+label{
     opacity: 1;
     visibility: visible;
     transform: translateY(1 rem);
 }
-
-/* making the text in the box to disapear */
 .Form-group input:focus::-webkit-input-placeholder, .Form-group textarea:focus::-webkit-input-placeholder{
     color: transparent;
 }
-
 .centered-btn-wrapper{
     display: flex;
     justify-content: center;
 }
-
 .centered-btn-wrapper> .btn:active{
     box-shadow: 5px 5px 30px rgba(o, 0, 0, 0.4);
 }
-
- /* media Queries */
- @media (max-width:912px){
+@media (max-width:912px){
     .centered-btn-wrapper{
         margin-left: 50%;
     }

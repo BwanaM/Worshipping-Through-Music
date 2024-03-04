@@ -1,0 +1,7 @@
+User-agent:*
+Disallow:/Pictures/
+Disallow:/styles/
+Disallow:/js/
+Disallow:/ico/
+Allow:/
+Sitemap:https://www.worshippingthroughmusic.com/sitemap.xml
