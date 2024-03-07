@@ -1,7 +1,4 @@
 User-agent:*
-Disallow:/Pictures/
-Disallow:/styles/
-Disallow:/js/
-Disallow:/ico/
 Allow:/
+Host:https://www.worshippingthroughmusic.com
 Sitemap:https://www.worshippingthroughmusic.com/sitemap.xml
