@@ -29,6 +29,12 @@
 .email-address{
     text-align: center;
 }
+.email-address p a{
+    color: black;
+}
+.email-address p a:hover{
+    color: red;
+}
 .Page-Container> .Contact-grid-wrapper> .Contact-metadata-sidebar-wrapper> .Company-details-wrapper:hover{
     color: #cea135;
 }

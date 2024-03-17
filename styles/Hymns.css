@@ -34,7 +34,7 @@
 .hymn{
     min-height: 100vh;
     padding: 5%;
-    background-image: linear-gradient(rgba(20, 22, 22, 0.253), rgba(6, 6, 24, 0.9)), url(../Pictures/parallax/Parallax2Hymns.png);
+    background-image: linear-gradient(rgba(20, 22, 22, 0.253), rgba(6, 6, 24, 0.9)), url(../Pictures/logos/Parallax2Hymns.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,6 +70,8 @@
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
+    border-radius: 20px;
+    border: solid black;
   }
 .Direction-Changing-Wrapper> a:hover {
     background-color: red;

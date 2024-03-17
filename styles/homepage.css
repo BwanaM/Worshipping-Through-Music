@@ -1,5 +1,5 @@
 .paralax {
-    background-image: url(../Pictures/parallax/Parallax1Home.png);
+    background-image: url(../Pictures/logos/Parallax1Home.webp);
     padding: 100px;
     height: 700px;
     background-attachment: fixed;
@@ -13,27 +13,36 @@
     margin-right: 300px;
 }
 .paralax> .paralax-one> .Heading-1 {
-    background-color: #11122b;
-    color: #cbcbcb;
     width: fit-content;
     border-radius: 2px;
     padding: 1px 20px;
+    border: solid #11122b;
+    background-color: #cbcbcb;
+}
+.paralax> .paralax-one> .Heading-1 a{
+    color: #11122b;
 }
 .paralax> .paralax-one> .Heading-2 {
-    background-color: red;
-    color: #11122b;
     padding: 1px 20px;
     margin-top: 15px;
     width: fit-content;
     border-radius: 2px;
+    border: solid black;
+    background-color: red;
+}
+.paralax> .paralax-one> .Heading-2 a{
+    color: black;
 }
 .paralax> .paralax-one> .Heading-3 {
     background-color: #cea135;
-    color: black;
     padding: 1px 20px;
     margin-top: 15px;
     width: fit-content;
-    border-radius: 2px;
+    border-radius: 1px;
+    border: solid black;
+}
+.paralax> .paralax-one> .Heading-3 a{
+    color: black;
 }
 .paralax> .paralax-one> .Heading-4 {
     background-color: black;
@@ -41,19 +50,26 @@
     padding: 1px 20px;
     margin-top: 15px;
     width: fit-content;
-    border-radius: 2px;
+    border-radius: 1px;
 }
 .paralax> .paralax-one>.Heading-5 {
-    background-color: #11122b;
+    background-color: #cbcbcb;
     color: red;
     padding: 1px 20px;
     margin-top: 15px;
     width: fit-content;
     border-radius: 2px;
+    border:solid #11122b;
+}
+.paralax> .paralax-one> .Heading-5 a{
+    color: #11122b;
+}
+.paralax> .paralax-one a:hover{
+    letter-spacing: 2px;
 }
 .Features-structures {
     height: 400px;
-    background-image: url(../Pictures/Backgrounds/20230418_155634.jpg);
+    background-image: url(../Pictures/logos/FeaturesPic.webp);
     background-color: #cea135;
     border-top: 10px solid white;
     color: #11122b;
