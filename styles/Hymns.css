@@ -71,7 +71,7 @@
     display: inline-block;
     padding: 8px 16px;
     border-radius: 20px;
-    border: solid black;
+    border: solid #04AA6D;
   }
 .Direction-Changing-Wrapper> a:hover {
     background-color: red;
@@ -82,8 +82,8 @@
     color: black;
   }
  .next {
-    background-color: #04AA6D;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
   }
 .round {
     border-radius: 50%;
