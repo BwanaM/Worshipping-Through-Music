@@ -51,7 +51,7 @@
   color: rgba(231, 229, 224, 0.644);
   font-weight: bolder;
   box-shadow: 0 15px 20px rgba(22, 22, 22, 0.2);
-  border: 3px solid #cea135;
+  border: 3px solid rgba(231, 229, 224, 0.644);
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-width: fit-content;
@@ -69,7 +69,7 @@
 .Direction-Changing-Wrapper> a {
     text-decoration: none;
     display: inline-block;
-    padding: 8px 16px;
+    padding: 8px 10px;
     border-radius: 20px;
     border: solid #04AA6D;
   }
@@ -79,17 +79,17 @@
   }
 .previous {
     background-color: #f1f1f1;
-    color: black;
+    color: #04AA6D;
   }
  .next {
     background-color: whitesmoke;
-    color: black;
+    color: #04AA6D;
   }
 .round {
     border-radius: 50%;
   }
 .Hymns-Home{
-    color:#cea135 ;
+    color:#04AA6D ;
   }
 .chorus{
     font-style: oblique;

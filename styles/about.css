@@ -15,7 +15,10 @@
   vertical-align: baseline;
 }
 .page-container p a{
-    color:brown;
+    color: black;
+}
+.page-container p a:hover{
+  color: red;
 }
 .page-container h1,h2{
   padding-left: 4%;

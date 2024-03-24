@@ -47,15 +47,12 @@
 }
 @media (max-width:912px){
     .Skewed-Header{
-      
+
     }
     .Skewed-Header> .Header-bg {
         background-size: =<912px;
+        height: 60%;
     } 
-    .Skewed-Header> .Skewed-Header-Wrapper{
-        width: 100v;
-    
-    }
     .Skewed-Header> .Skewed-Header-Wrapper> .Skewed-Header-Content{
         flex-direction: column;
     }
