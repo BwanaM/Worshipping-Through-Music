@@ -1,0 +1,57 @@
+.lazy-yt-wrapper {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.lazy-youtube {
+	background-color: #000;
+	margin-bottom: 30px;
+	position: relative;
+	padding-top: 56.25%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.lazy-youtube img {
+	width: 100%;
+	top: -16.82%;
+	left: 0;
+	opacity: 1;
+}
+.lazy-youtube .lazy-play-btn {
+	width: 90px;
+	height: 60px;
+	background-color: #333;
+	box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+	z-index: 1;
+	opacity: 0.8;
+	border-radius: 6px;
+}
+.lazy-youtube .lazy-play-btn:before {
+	content: "";
+	border-style: solid;
+	border-width: 15px 0 15px 26.0px;
+	border-color: transparent transparent transparent #fff;
+}
+.lazy-youtube img,
+.lazy-youtube .lazy-play-btn {
+	cursor: pointer;
+}
+.lazy-youtube img,
+.lazy-youtube iframe,
+.lazy-youtube .lazy-play-btn,
+.lazy-youtube .lazy-play-btn:before {
+	position: absolute;
+}
+.lazy-youtube .lazy-play-btn,
+.lazy-youtube .lazy-play-btn:before {
+	top: 50%;
+	left: 50%;
+	transform: translate3d( -50%, -50%, 0 );
+}
+.lazy-youtube iframe {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}

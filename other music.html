@@ -22,8 +22,7 @@
     <meta property="og:image:height" content="315" >
     <meta property="og:image:type" content="image/jpeg" >
 
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"> -->
-    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"></noscript>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/skewed.css">
@@ -90,6 +89,11 @@
         <div class="square">
                 
             <div class="video-wraper" id="Bemba Hymns">
+                <!-- <div class="lazy-yt-wrapper">
+                    <div class="lazy-youtube" data-embed="1Q8fG0TtVAY">
+                        <div class="lazy-play-btn"></div>
+                    </div>
+                </div> -->
                 <iframe src="https://www.youtube.com/embed/playlist?list=PLJm0OMZpQ4bdpQgnBf91vWsa6wPmJPXQk" 
                     frameborder="0" 
                     title="Bemba Hymns" 
@@ -155,7 +159,12 @@
         <div class="square">
             
             <div class="video-wraper" id="Catholic Music">
-                <iframe src="https://www.youtube.com/embed/playlist?list=PLJm0OMZpQ4bcyQgrBKaotT4VevD3QKk29" frameborder="0" title="Youtube Video Player" allowfullscreen="allowfullscreen"></iframe>
+                <iframe src="https://www.youtube.com/embed/playlist?list=PLJm0OMZpQ4bcyQgrBKaotT4VevD3QKk29" 
+                    frameborder="0" 
+                    title="Youtube Video Player" 
+                    loading="lazy"
+                    allowfullscreen="allowfullscreen">
+                </iframe>
             </div>
 
             <div class="square-text-wrapper">
