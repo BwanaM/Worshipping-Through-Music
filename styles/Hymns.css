@@ -124,5 +124,10 @@
     margin: 0%;
   }
 }
+@media (max-width:599px){
+  .hymn h2 {
+    font-size: 35px;
+}
+}
 
 
