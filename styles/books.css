@@ -71,4 +71,7 @@
 }
 @media (max-width:599px) {
   html{font-size: 12px;}
+  .heading{
+    width: 80%;
+  }
 }
