@@ -15,4 +15,4 @@ a {text-decoration: none; !important}
 .Top-wrapper{padding:42px;text-align:center;border-radius:1px;text-transform:uppercase;color:black}
 .nav-link a{font-family: 'ubuntu condensed', sans-serif;color: #cbcbcb;text-decoration: none;text-transform: uppercase;transition: 0.5s;}
 @media (max-width:1023px){.links-Wrapper{flex-direction: column;gap: 5%;}}
-@media (max-width:599px){.square{grid-template-columns:1fr}html{font-size:12px}.square-text-wrapper{order:1} .links-Wrapper a{font-size: 16px;}}
+@media (max-width:599px){.square{grid-template-columns:1fr}html{font-size:12px}.square-text-wrapper{order:1}}
