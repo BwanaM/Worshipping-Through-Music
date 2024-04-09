@@ -51,6 +51,7 @@
     margin-top: 15px;
     width: fit-content;
     border-radius: 1px;
+    border: solid #cbcbcb;
 }
 .paralax> .paralax-one>.Heading-5 {
     background-color: #cbcbcb;
@@ -63,6 +64,15 @@
 }
 .paralax> .paralax-one> .Heading-5 a{
     color: #11122b;
+}
+.paralax> .paralax-one> .Heading-6 {
+    background-color: #11122b;
+    color: #cbcbcb;
+    padding: 1px 20px;
+    margin-top: 15px;
+    width: fit-content;
+    border-radius: 1px;
+    border: solid #cbcbcb;
 }
 .paralax> .paralax-one a:hover{
     letter-spacing: 2px;
