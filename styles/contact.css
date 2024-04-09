@@ -61,4 +61,7 @@
         padding: 5%;
     }
     html{font-size: 12px;}
+    .links-Wrapper a{
+        font-size: 16px;
+      }
 }

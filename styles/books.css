@@ -74,4 +74,7 @@
   .heading{
     width: 80%;
   }
+  .links-Wrapper a{
+    font-size: 16px;
+  }
 }
