@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +23,9 @@
     <meta property="og:image:height" content="315">
     <meta property="og:image:type" content="image/jpeg">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@400;700&family=Playfair+Display:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@400;700&family=Playfair+Display:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="./favicon.ico.jpg">
 
@@ -69,7 +72,7 @@
             background: var(--primary);
             color: white;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
             position: relative;
             overflow: hidden;
         }
@@ -103,7 +106,7 @@
         .hymn {
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
             margin: 20px 0;
             position: relative;
             background-color: var(--light-bg);
@@ -157,8 +160,8 @@
         }
 
         .hymn-verse {
-            margin: 2px 0; 
-            padding: 15px 20px; 
+            margin: 2px 0;
+            padding: 15px 20px;
             background: var(--verse-bg);
             font-family: 'Noto Serif', serif;
             font-size: 1.2rem;
@@ -199,7 +202,7 @@
             font-weight: 600;
             text-decoration: none;
             transition: var(--transition);
-            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
             position: relative;
             overflow: hidden;
             z-index: 1;
@@ -212,7 +215,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0.3));
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
             z-index: -1;
             transform: translateX(-100%);
             transition: transform 0.4s ease;
@@ -224,7 +227,7 @@
 
         .nav-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
         }
 
         .previous {
@@ -287,7 +290,7 @@
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid var(--gold);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .logo-footer h3 {
@@ -344,7 +347,7 @@
             width: 48px;
             height: 48px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.15);
+            background: rgba(255, 255, 255, 0.15);
             color: white;
             transition: var(--transition);
             font-size: 1.3rem;
@@ -409,7 +412,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
         }
 
         .control-btn:hover {
@@ -450,7 +453,7 @@
             align-items: center;
             margin: 25px auto;
             padding: 15px;
-            background-color: rgba(255,255,255,0.9);
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 8px;
             border: 1px solid #eee;
             text-align: center;
@@ -497,7 +500,8 @@
                 font-size: 1.7rem;
             }
 
-            .hymn-content, .hymn-verse {
+            .hymn-content,
+            .hymn-verse {
                 font-size: 1.1rem;
             }
 
@@ -542,7 +546,8 @@
                 font-size: 0.9rem;
             }
 
-            .hymn-content, .hymn-verse {
+            .hymn-content,
+            .hymn-verse {
                 font-size: 1.05rem;
             }
 
@@ -559,18 +564,14 @@
             background-image: linear-gradient(to bottom right, #121212, #1e1e1e);
             color: #e0e0e0;
         }
-        
+
         .night-mode .hymn {
             background-color: #222;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
         }
-        
+
         .night-mode .hymn-title {
             color: #f0f0f0;
-        }
-        
-        .night-mode .hymn-verse {
-            border-left: 4px solid var(--gold);
         }
 
         .loading-spinner {
@@ -586,8 +587,13 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .error-message {
@@ -602,6 +608,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -663,7 +670,8 @@
                     <div class="logo">
                         <!-- Circular logo in footer -->
                         <img src="Pictures/logos/channels4_profile.webp" alt="Worshipping Through Music Logo">
-                        <h1 style="color: white;">Worshipping <span style="color: var(--gold);">Through Music</span></h1>
+                        <h1 style="color: white;">Worshipping <span style="color: var(--gold);">Through Music</span>
+                        </h1>
                     </div>
                     <h3>Worshipping Through Music</h3>
                 </div>
@@ -696,16 +704,20 @@
                 </div>
                 <div class="social-media-icons-wrapper">
                     <div class="youtube">
-                        <a href="https://www.youtube.com/channel/UCVC42dubbcPg3D6A8rcpuiQ" target="_blank" aria-label="YouTube"><i class="fab fa-youtube" title="YouTube"></i></a>
+                        <a href="https://www.youtube.com/channel/UCVC42dubbcPg3D6A8rcpuiQ" target="_blank"
+                            aria-label="YouTube"><i class="fab fa-youtube" title="YouTube"></i></a>
                     </div>
                     <div class="Email">
-                        <a href="mailto:service@worshippingthroughmusic.com" aria-label="Email"><i class="fas fa-envelope" title="Email Us"></i></a>
+                        <a href="mailto:service@worshippingthroughmusic.com" aria-label="Email"><i
+                                class="fas fa-envelope" title="Email Us"></i></a>
                     </div>
                     <div class="watsapp">
-                        <a href="https://wa.me/260971191919/?text=Hi, Worshipping Through Music" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp" title="WhatsApp"></i></a>
+                        <a href="https://wa.me/260971191919/?text=Hi, Worshipping Through Music" target="_blank"
+                            aria-label="WhatsApp"><i class="fab fa-whatsapp" title="WhatsApp"></i></a>
                     </div>
                     <div class="facebook">
-                        <a href="https://www.facebook.com/profile.php?id=61553126773936" target="_blank" aria-label="Facebook"><i class="fab fa-facebook" title="Facebook"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61553126773936" target="_blank"
+                            aria-label="Facebook"><i class="fab fa-facebook" title="Facebook"></i></a>
                     </div>
                 </div>
             </div>
@@ -728,9 +740,9 @@
         </div>
     </div>
 
-    <!-- Google AdSense script (Add your publisher ID here) --> 
+    <!-- Google AdSense script (Add your publisher ID here) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4252166289270815"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <script>
         // Google AdSense ad implementation
         (adsbygoogle = window.adsbygoogle || []).push({
@@ -765,9 +777,9 @@
             const params = new URLSearchParams(window.location.search);
             const hymnId = parseInt(params.get('id'), 10) || 1;
             const data = await fetchHymns();
-            
+
             if (!data || !data.hymns) return;
-            
+
             const hymns = data.hymns;
             const hymn = hymns.find(h => h.id === hymnId);
             const hymnContent = document.getElementById('hymn-content');
@@ -801,9 +813,9 @@
                 // Generate navigation links
                 const prevHymn = hymns.find(h => h.id === hymnId - 1);
                 const nextHymn = hymns.find(h => h.id === hymnId + 1);
-                
+
                 let navHTML = '';
-                
+
                 if (prevHymn) {
                     navHTML += `
                         <a href="hymnpage.html?id=${prevHymn.id}" class="nav-button previous" title="Hymn ${prevHymn.id}">
@@ -816,13 +828,13 @@
                 } else {
                     navHTML += '<span style="visibility: hidden;"></span><span style="visibility: hidden;"></span>';
                 }
-                
+
                 navHTML += `
                     <a href="books.html" class="nav-button Hymns-Home">
                         <i class="fas fa-home"></i> Hymns Home
                     </a>
                 `;
-                
+
                 if (nextHymn) {
                     navHTML += `
                         <a href="hymnpage.html?id=${nextHymn.id}" class="nav-button next" title="Hymn ${nextHymn.id}">
@@ -835,7 +847,7 @@
                 } else {
                     navHTML += '<span style="visibility: hidden;"></span><span style="visibility: hidden;"></span>';
                 }
-                
+
                 navigation.innerHTML = navHTML;
             } else {
                 hymnContent.innerHTML = `
@@ -855,20 +867,20 @@
 
         // Initialize hymn display
         displayHymn();
-        
+
         // Reading Controls Functionality
-        document.getElementById('night-mode').addEventListener('click', function() {
+        document.getElementById('night-mode').addEventListener('click', function () {
             document.body.classList.toggle('night-mode');
             this.classList.toggle('active');
-            this.innerHTML = document.body.classList.contains('night-mode') ? 
-                '<i class="fas fa-sun"></i> Day Mode' : 
+            this.innerHTML = document.body.classList.contains('night-mode') ?
+                '<i class="fas fa-sun"></i> Day Mode' :
                 '<i class="fas fa-moon"></i> Night Mode';
         });
-        
-        document.getElementById('increase-font').addEventListener('click', function() {
+
+        document.getElementById('increase-font').addEventListener('click', function () {
             const content = document.querySelector('.hymn-content');
             if (!content) return;
-            
+
             const currentSize = parseFloat(window.getComputedStyle(content).fontSize);
             if (currentSize < 22) {
                 content.style.fontSize = (currentSize + 1) + 'px';
@@ -877,11 +889,11 @@
                 });
             }
         });
-        
-        document.getElementById('decrease-font').addEventListener('click', function() {
+
+        document.getElementById('decrease-font').addEventListener('click', function () {
             const content = document.querySelector('.hymn-content');
             if (!content) return;
-            
+
             const currentSize = parseFloat(window.getComputedStyle(content).fontSize);
             if (currentSize > 16) {
                 content.style.fontSize = (currentSize - 1) + 'px';
@@ -890,10 +902,11 @@
                 });
             }
         });
-        
-        document.getElementById('print-hymn').addEventListener('click', function() {
+
+        document.getElementById('print-hymn').addEventListener('click', function () {
             window.print();
         });
     </script>
 </body>
+
 </html>
