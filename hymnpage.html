@@ -906,6 +906,9 @@
         document.getElementById('print-hymn').addEventListener('click', function () {
             window.print();
         });
+        // Set current year in footer
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+        
     </script>
 </body>
 
