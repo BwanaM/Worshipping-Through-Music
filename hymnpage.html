@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="description" content="Hymn in Bemba from Inyimbo Sha Bwina Kristu - Worshipping Through Music">
-    <meta name="keywords" content="Bemba hymns, Inyimbo Sha Bwina Kristu, Christian worship, Bemba music">
+    <meta name="description" content="Hymns in Bemba and English from Inyimbo Sha Bwina Kristu and other collections - Worshipping Through Music">
+    <meta name="keywords" content="Bemba hymns, English hymns, Inyimbo Sha Bwina Kristu, Christian worship, Bemba music, English Christian music">
     <meta name="author" content="Worshipping Through Music">
-    <title>Inyimbo Sha Bwina Kristu</title>
+    <title>Hymn Collection</title>
     <link rel="canonical" href="https://worshippingthroughmusic.com/hymnpage.html">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Inyimbo Sha Bwina Kristu">
-    <meta property="og:description" content="Hymn in Bemba from Inyimbo Sha Bwina Kristu - Worshipping Through Music">
+    <meta property="og:title" content="Hymn Collection">
+    <meta property="og:description" content="Hymns in Bemba and English from Inyimbo Sha Bwina Kristu and other collections - Worshipping Through Music">
     <meta property="og:url" content="https://worshippingthroughmusic.com/hymnpage.html">
     <meta property="og:site_name" content="Worshipping Through Music">
     <meta property="article:publisher" content="https://www.facebook.com/profile.php?id=61553126773936">
@@ -659,6 +659,35 @@
             cursor: pointer;
         }
 
+        /* Language Switcher */
+        .language-switcher {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .language-switcher button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 20px;
+            background: var(--light);
+            color: var(--primary);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .language-switcher button.active {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        .language-switcher button:hover {
+            background: var(--accent);
+            color: white;
+        }
+
         /* Responsive Adjustments */
         @media (max-width: 992px) {
             .hero {
@@ -915,8 +944,8 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-content">
-            <h1>Inyimbo Sha Bwina Kristu</h1>
-            <p>Hymns in Bemba - Worshipping Through Music</p>
+            <h1>Hymn Collection</h1>
+            <p>Hymns in Bemba and English - Worshipping Through Music</p>
         </div>
     </section>
 
@@ -925,6 +954,11 @@
         <div class="container">
             <div class="section-title">
                 <h2>Hymns</h2>
+            </div>
+
+            <div class="language-switcher">
+                <button id="bembaBtn" class="active">Bemba</button>
+                <button id="englishBtn">English</button>
             </div>
 
             <div class="ad-container top-ad">
@@ -1054,17 +1088,17 @@
             document.body.style.overflow = 'hidden';
         });
 
-        function closeMobileMenu() {
+        function closeMobileMenu15() {
             mobileNav.classList.remove('active');
             mobileOverlay.classList.remove('active');
             document.body.style.overflow = 'auto';
         }
 
-        mobileClose.addEventListener('click', closeMobileMenu);
-        mobileOverlay.addEventListener('click', closeMobileMenu);
+        mobileClose.addEventListener('click', closeMobileMenu15);
+        mobileOverlay.addEventListener('click', closeMobileMenu15);
 
         document.querySelectorAll('.mobile-nav a').forEach(link => {
-            link.addEventListener('click', closeMobileMenu);
+            link.addEventListener('click', closeMobileMenu15);
         });
 
         // Highlight active nav link
@@ -1075,16 +1109,49 @@
             }
         });
 
-        // Fetch hymns from BembaHymns.json
+        // Language switcher functionality
+        const bembaBtn = document.getElementById('bembaBtn');
+        const englishBtn = document.getElementById('englishBtn');
+        let currentLanguage = new URLSearchParams(window.location.search).get('lang') || 'bemba';
+
+        bembaBtn.classList.toggle('active', currentLanguage === 'bemba');
+        englishBtn.classList.toggle('active', currentLanguage === 'english');
+
+        bembaBtn.addEventListener('click', () => {
+            currentLanguage = 'bemba';
+            bembaBtn.classList.add('active');
+            englishBtn.classList.remove('active');
+            updateHymnURL();
+            displayHymn();
+        });
+
+        englishBtn.addEventListener('click', () => {
+            currentLanguage = 'english';
+            englishBtn.classList.add('active');
+            bembaBtn.classList.remove('active');
+            updateHymnURL();
+            displayHymn();
+        });
+
+        // Update URL without reloading
+        function updateHymnURL() {
+            const params = new URLSearchParams(window.location.search);
+            const hymnId = params.get('id') || '1';
+            const newURL = `hymnpage.html?id=${hymnId}&lang=${currentLanguage}`;
+            window.history.pushState({}, '', newURL);
+        }
+
+        // Fetch hymns from JSON
         async function fetchHymns() {
             try {
-                const response = await fetch('234Doc.json');
+                const file = currentLanguage === 'bemba' ? '234Doc.json' : 'EnglishHymns.json';
+                const response = await fetch(file);
                 if (!response.ok) {
-                    throw new Error(`Failed to fetch hymns: ${response.status} ${response.statusText}`);
+                    throw new Error(`Failed to fetch ${currentLanguage} hymns: ${response.status} ${response.statusText}`);
                 }
                 return await response.json();
             } catch (error) {
-                console.error('Error fetching hymns:', error);
+                console.error(`Error fetching ${currentLanguage} hymns:`, error);
                 document.getElementById('hymn-content').innerHTML = `
                     <div class="error-message">
                         <i class="fas fa-exclamation-triangle"></i>
@@ -1097,7 +1164,7 @@
             }
         }
 
-        // Display hymn based on URL parameter
+        // Display hymn based on URL parameters
         async function displayHymn() {
             const params = new URLSearchParams(window.location.search);
             const hymnId = parseInt(params.get('id'), 10) || 1;
@@ -1111,11 +1178,11 @@
             const navigation = document.getElementById('navigation');
 
             if (hymn) {
-                document.title = `Hymn ${hymn.id}: ${hymn.title} | Inyimbo Sha Bwina Kristu`;
-                document.querySelector('meta[name="description"]').setAttribute('content', `Hymn ${hymn.id} - ${hymn.title} in Bemba from Inyimbo Sha Bwina Kristu`);
+                document.title = `Hymn ${hymn.id}: ${hymn.title} | Hymn Collection`;
+                document.querySelector('meta[name="description"]').setAttribute('content', `Hymn ${hymn.id} - ${hymn.title} in ${currentLanguage.charAt(0).toUpperCase() + currentLanguage.slice(1)} from Worshipping Through Music`);
                 document.querySelector('meta[property="og:title"]').setAttribute('content', `Hymn ${hymn.id}: ${hymn.title}`);
-                document.querySelector('meta[property="og:description"]').setAttribute('content', `Hymn ${hymn.id} - ${hymn.title} in Bemba from Inyimbo Sha Bwina Kristu`);
-                document.querySelector('meta[property="og:url"]').setAttribute('content', `https://worshippingthroughmusic.com/hymnpage.html?id=${hymn.id}`);
+                document.querySelector('meta[property="og:description"]').setAttribute('content', `Hymn ${hymn.id} - ${hymn.title} in ${currentLanguage.charAt(0).toUpperCase() + currentLanguage.slice(1)} from Worshipping Through Music`);
+                document.querySelector('meta[property="og:url"]').setAttribute('content', `https://worshippingthroughmusic.com/hymnpage.html?id=${hymn.id}&lang=${currentLanguage}`);
 
                 hymnContent.innerHTML = `
                     <div class="hymn-title">${hymn.id}. ${hymn.title}</div>
@@ -1128,19 +1195,18 @@
                         `).join('')}
                     </div>
                     <div class="hymn-info">
-                        <div>Inyimbo Sha Bwina Kristu</div>
+                        <div>${currentLanguage === 'bemba' ? 'Inyimbo Sha Bwina Kristu' : 'English Hymns'}</div>
                         <div>Hymn ${hymn.id}</div>
                     </div>
                 `;
 
                 const prevHymn = hymns.find(h => h.id === hymnId - 1);
                 const nextHymn = hymns.find(h => h.id === hymnId + 1);
-                // NEW RESPONSIVE NAVIGATION CODE:
                 let navHTML = '';
 
                 if (prevHymn) {
                     navHTML += `
-                <a href="hymnpage.html?id=${prevHymn.id}" class="nav-button previous" title="Hymn ${prevHymn.id}">
+                <a href="hymnpage.html?id=${prevHymn.id}&lang=${currentLanguage}" class="nav-button previous" title="Hymn ${prevHymn.id}">
                     <i class="fas fa-arrow-left"></i> Previous
                 </a>
             `;
@@ -1156,7 +1222,7 @@
 
                 if (nextHymn) {
                     navHTML += `
-                <a href="hymnpage.html?id=${nextHymn.id}" class="nav-button next" title="Hymn ${nextHymn.id}">
+                <a href="hymnpage.html?id=${nextHymn.id}&lang=${currentLanguage}" class="nav-button next" title="Hymn ${nextHymn.id}">
                     Next <i class="fas fa-arrow-right"></i>
                 </a>
             `;
