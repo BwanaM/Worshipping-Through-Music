@@ -55,7 +55,7 @@
             line-height: 1.6;
             color: var(--text);
             background-color: #f9f9f9;
-            overflow-x: hidden;
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
         h1,
@@ -437,6 +437,16 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            /* Map fixes */
+            width: 100%;
+            position: relative;
+        }
+        
+        .map-container iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
         /* Footer */
@@ -692,6 +702,11 @@
             .hero-buttons .btn:last-child {
                 margin-bottom: 0;
             }
+
+            /* Map adjustments */
+            .map-container {
+                height: 250px;
+            }
         }
 
         /* Mobile Phones */
@@ -758,6 +773,11 @@
             .footer-col {
                 padding: 0 10px;
             }
+
+            /* Map adjustments */
+            .map-container {
+                height: 200px;
+            }
         }
 
         /* Very Small Phones */
@@ -809,6 +829,11 @@
                 top: 15px;
                 right: 15px;
             }
+
+            /* Map adjustments */
+            .map-container {
+                height: 180px;
+            }
         }
 
         /* Landscape phones */
@@ -824,6 +849,11 @@
 
             .mobile-nav ul li {
                 margin-bottom: 10px;
+            }
+
+            /* Map adjustments */
+            .map-container {
+                height: 150px;
             }
         }
 
@@ -1249,17 +1279,24 @@
                 e.preventDefault();
             }
         }, { passive: false });
-        // Add this JavaScript fix to prevent horizontal scrolling
-        document.addEventListener('DOMContentLoaded', function () {
-            // Prevent horizontal scrolling
-            document.body.style.overflowX = 'hidden';
 
-            // Ensure elements don't exceed viewport width
-            const containers = document.querySelectorAll('.container, section, .category-card');
-            containers.forEach(container => {
-                container.style.maxWidth = '100vw';
-            });
-        });
+        // Fix for map container on mobile devices
+        function resizeMapContainer() {
+            const mapContainer = document.querySelector('.map-container');
+            if (window.innerWidth <= 480) {
+                mapContainer.style.height = '200px';
+            } else if (window.innerWidth <= 768) {
+                mapContainer.style.height = '250px';
+            } else {
+                mapContainer.style.height = '300px';
+            }
+        }
+
+        // Initial resize
+        resizeMapContainer();
+        
+        // Resize on window resize
+        window.addEventListener('resize', resizeMapContainer);
     </script>
 </body>
 
