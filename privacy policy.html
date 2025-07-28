@@ -325,6 +325,8 @@
             position: relative;
             padding-left: 15px;
             font-size: 0.95rem;
+            word-break: break-word; /* Ensure long text like email wraps */
+            overflow-wrap: anywhere; /* Additional support for text wrapping */
         }
         
         .privacy-section li:before {
@@ -549,6 +551,29 @@
             text-align: center;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             max-width: 100%;
+            overflow: hidden; /* Prevent overflow from ads */
+        }
+        
+        /* Contact Section Specific Styling */
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping for long email addresses */
+            word-break: break-word; /* Break long words like email addresses */
+            overflow-wrap: anywhere; /* Additional support for text wrapping */
+            padding-right: 10px; /* Prevent text from touching edges */
+        }
+        
+        .contact-list a {
+            word-break: break-word; /* Ensure email link breaks properly */
+            white-space: normal; /* Allow text to wrap naturally */
+            display: inline-block; /* Ensure link respects wrapping */
         }
         
         /* Responsive Adjustments */
@@ -655,6 +680,14 @@
             .mobile-nav {
                 padding-top: 70px;
             }
+            
+            .contact-list li {
+                font-size: 0.85rem; /* Slightly smaller font for better fit */
+            }
+            
+            .contact-list a {
+                max-width: 100%; /* Prevent link from exceeding container */
+            }
         }
         
         @media (max-width: 480px) {
@@ -702,6 +735,15 @@
             
             .mobile-nav {
                 width: 85%;
+            }
+            
+            .contact-list li {
+                font-size: 0.8rem; /* Further reduce font size for very small screens */
+                padding-right: 5px; /* Adjust padding for tight screens */
+            }
+            
+            .contact-list a {
+                font-size: 0.8rem; /* Match font size for consistency */
             }
         }
     </style>
@@ -940,7 +982,7 @@
                     <h2>Contact Us</h2>
                     <p>If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us:</p>
                     
-                    <ul>
+                    <ul class="contact-list">
                         <li>By email: <a href="mailto:service@worshippingthroughmusic.com">service@worshippingthroughmusic.com</a></li>
                         <li>By phone: <a href="tel:+260971191919">+260 971 191919</a></li>
                     </ul>
