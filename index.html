@@ -856,9 +856,69 @@
                 margin: 0;
             }
 
+            /* Fix 1: Prevent horizontal overflow globally */
+            html,
+            body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+            /* Fix 2: Adjust container padding for small devices */
+            @media (max-width: 768px) {
+                .container {
+                    padding: 0 10px;
+                }
+            }
+
             /* Fix 3: Correct map iframe overflow */
             .map-container iframe {
                 max-width: 100%;
+            }
+
+            /* Fix 4: Header adjustments for very small screens */
+            @media (max-width: 360px) {
+                .header-container {
+                    padding: 0 5px;
+                }
+
+                .header-contact a {
+                    font-size: 0.8rem;
+                }
+
+                .logo h1 {
+                    font-size: 1rem;
+                }
+
+                .logo img {
+                    height: 35px;
+                    width: 35px;
+                    margin-right: 8px;
+                }
+            }
+
+            /* Fix 5: Hero section text overflow */
+            @media (max-width: 480px) {
+                .hero h1 {
+                    font-size: 1.4rem;
+                    padding: 0 5px;
+                }
+
+                .hero p {
+                    padding: 0 5px;
+                }
+            }
+
+            /* Fix 6: Ensure all images don't cause overflow */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* Fix 7: Prevent category cards from overflowing */
+            @media (max-width: 480px) {
+                .category-card {
+                    margin: 0 5px;
+                }
             }
         }
     </style>
@@ -1254,6 +1314,17 @@
                 e.preventDefault();
             }
         }, { passive: false });
+        // Add this JavaScript fix to prevent horizontal scrolling
+        document.addEventListener('DOMContentLoaded', function() {
+            // Prevent horizontal scrolling
+            document.body.style.overflowX = 'hidden';
+            
+            // Ensure elements don't exceed viewport width
+            const containers = document.querySelectorAll('.container, section, .category-card');
+            containers.forEach(container => {
+                container.style.maxWidth = '100vw';
+            });
+        });
     </script>
 </body>
 
