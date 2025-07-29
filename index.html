@@ -4,13 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="description"
         content="Discover Bemba hymns, Inyimbo Sha Bwina Christu, and traditional Christian music. Find worship books and spiritual resources.">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4252166289270815"
-        crossorigin="anonymous"></script>
-
     <title>Worshipping Through Music - Christian Hymns and Resources</title>
     <link rel="canonical" href="https://worshippingthroughmusic.com">
     <meta property="og:locale" content="en_US">
@@ -55,7 +52,7 @@
             line-height: 1.6;
             color: var(--text);
             background-color: #f9f9f9;
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-x: hidden;
         }
 
         h1,
@@ -437,7 +434,6 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            /* Map fixes */
             width: 100%;
             position: relative;
         }
@@ -615,6 +611,11 @@
         }
 
         /* RESPONSIVE ENHANCEMENTS */
+        /* New: Added responsive image class */
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+        }
 
         /* Tablet & Small Desktop */
         @media (max-width: 992px) {
@@ -637,6 +638,11 @@
 
             .about-image {
                 order: -1;
+            }
+            
+            /* New: Adjust grid gaps */
+            .categories-grid, .features-grid {
+                gap: 20px;
             }
         }
 
@@ -706,6 +712,11 @@
             /* Map adjustments */
             .map-container {
                 height: 250px;
+            }
+            
+            /* New: Adjust category image height */
+            .category-img {
+                height: 180px;
             }
         }
 
@@ -778,6 +789,17 @@
             .map-container {
                 height: 200px;
             }
+            
+            /* New: Adjust button padding */
+            .btn {
+                padding: 10px 25px;
+                font-size: 0.9rem;
+            }
+            
+            /* New: Adjust category image height */
+            .category-img {
+                height: 160px;
+            }
         }
 
         /* Very Small Phones */
@@ -804,13 +826,14 @@
             }
 
             .btn {
-                padding: 10px 20px;
-                font-size: 0.9rem;
+                padding: 8px 20px;
+                font-size: 0.85rem;
             }
 
             .header-contact a {
                 margin-left: 5px;
                 margin-right: 5px;
+                font-size: 0.9rem;
             }
 
             .header-contact i {
@@ -834,6 +857,16 @@
             .map-container {
                 height: 180px;
             }
+            
+            /* New: Adjust category image height */
+            .category-img {
+                height: 140px;
+            }
+            
+            /* New: Reduce section padding */
+            .section {
+                padding: 40px 0;
+            }
         }
 
         /* Landscape phones */
@@ -854,6 +887,11 @@
             /* Map adjustments */
             .map-container {
                 height: 150px;
+            }
+            
+            /* New: Adjust category image height */
+            .category-img {
+                height: 120px;
             }
         }
 
@@ -894,7 +932,7 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <img src="Pictures/logos/channels4_profile.webp" alt="Worshipping Through Music Logo">
+                <img src="Pictures/logos/channels4_profile.webp" alt="Worshipping Through Music Logo" class="responsive-img">
                 <h1>Worshipping <span>Through Music</span></h1>
             </div>
 
@@ -950,20 +988,6 @@
             </div>
         </div>
     </section>
-
-    <!-- AdSense Container -->
-    <div class="container">
-        <div class="ads-container">
-            <script async
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4252166289270815"
-                crossorigin="anonymous"></script>
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4252166289270815"
-                data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-    </div>
 
     <!-- Categories Section -->
     <section class="section categories">
@@ -1076,8 +1100,8 @@
                 </div>
 
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1517232115160-ff93364542dd?auto=format&fit=crop&w=600"
-                        alt="Worship Community">
+                    <img src="https://images.unsplash.com/photo-1517232115160-ff93364542dd?auto=format&fit=crop&w=600" 
+                         alt="Worship Community" class="responsive-img">
                 </div>
             </div>
         </div>
@@ -1155,7 +1179,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo">
-                        <img src="Pictures/logos/channels4_profile.webp" alt="Worshipping Through Music Logo">
+                        <img src="Pictures/logos/channels4_profile.webp" alt="Worshipping Through Music Logo" class="responsive-img">
                         <h1 style="color: white;">Worshipping <span style="color: var(--gold);">Through Music</span>
                         </h1>
                     </div>
@@ -1206,7 +1230,7 @@
             </div>
 
             <div class="copyright">
-                <p>&copy; 2025 Worshipping Through Music. All Rights Reserved.</p>
+                <p>&copy; <span id="copyright-year"></span> Worshipping Through Music. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -1265,7 +1289,6 @@
         // Set current year in footer
         document.getElementById('copyright-year').textContent = new Date().getFullYear();
 
-
         // Handle keyboard navigation for mobile menu
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
@@ -1279,24 +1302,6 @@
                 e.preventDefault();
             }
         }, { passive: false });
-
-        // Fix for map container on mobile devices
-        function resizeMapContainer() {
-            const mapContainer = document.querySelector('.map-container');
-            if (window.innerWidth <= 480) {
-                mapContainer.style.height = '200px';
-            } else if (window.innerWidth <= 768) {
-                mapContainer.style.height = '250px';
-            } else {
-                mapContainer.style.height = '300px';
-            }
-        }
-
-        // Initial resize
-        resizeMapContainer();
-        
-        // Resize on window resize
-        window.addEventListener('resize', resizeMapContainer);
     </script>
 </body>
 
