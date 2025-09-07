@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.morris.inyimbo",
+      "sha256_cert_fingerprints": [
+        "ED:CC:64:93:15:2E:F6:CD:B5:EB:77:8E:05:19:ED:F0:3D:6F:93:77:95:1C:D6:12:74:0F:37:C1:C9:5F:09:D1"
+      ]
+    }
+  }
+]
